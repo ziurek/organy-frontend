@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Organmistrzostwo Zdzisław Mollin | Organmistrzostwo, organy, Mollin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-main="scripts/amd/config" src="scripts/amd/require.js"></script>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="background-div">
+    <div class="container">
+      <img src="/images/logo.jpg" class="img-responsive">
+
+      <div class="navbar-organy" ng-controller="AppCtrl">
+        <div class="navbar navbar-inverse" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed" >
+              <li ng-class="{ active: isActive('/main-page') }"><a ui-sref="mainPage">Strona główna</a></li>
+              <li ng-class="{ active: isActive('/about-company') }"><a ui-sref="aboutCompany">O firmie</a></li>
+              <li ng-class="{ active: isActive('/how-we-build') }"><a ui-sref="howWeBuild">Jak budujemy</a></li>
+              <li ng-class="{ active: isActive('/realisations') }"><a ui-sref="realisations">Realizacje</a></li>
+              <li ng-class="{ active: isActive('/references') }"><a ui-sref="references">Referencje</a></li>
+              <li ng-class="{ active: isActive('/contact') }"><a ui-sref="contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div ui-view></div>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
