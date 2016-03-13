@@ -5,7 +5,9 @@ require.config({
     'bootstrap': 'bower_components/bootstrap/dist/js/boostrap',
     'angular': 'bower_components/angular/angular',
     'uiRouter': 'bower_components/angular-ui-router/release/angular-ui-router',
-    'uiBootstrap': 'bower_components/angular-bootstrap/ui-bootstrap'
+    'uiBootstrap': 'bower_components/angular-bootstrap/ui-bootstrap',
+    'uiBootstrapTpls': 'bower_components/angular-bootstrap/ui-bootstrap-tpls',
+    'angularAnimate': 'bower_components/angular-animate/angular-animate'
   },
   shim: {
     'angular': {
@@ -16,6 +18,12 @@ require.config({
       exports: 'uiRouter'
     },
     'uiBootstrap': {
+      deps: ['angular']
+    },
+    'uiBootstrapTpls': {
+      deps: ['angular']
+    },
+    'angularAnimate': {
       deps: ['angular']
     },
     bootstrap: {

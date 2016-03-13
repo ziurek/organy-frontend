@@ -15,11 +15,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div class="background-div">
+  <div class="background-div" ng-controller="AppCtrl">
     <div class="container">
       <img src="/images/logo.jpg" class="img-responsive">
 
-      <div class="navbar-organy" ng-controller="AppCtrl">
+      <div class="navbar-organy">
         <div class="navbar navbar-inverse" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -40,6 +40,19 @@
             </ul>
           </div>
         </div>
+      </div>
+      <!-- interval="myInterval" no-wrap="noWrapSlides" track by banner.id" index="slide.id"-->
+
+      <div>
+        <uib-carousel class="carousel-fade" active="true" interval="3000">
+          <uib-slide ng-repeat="banner in Banners track by $index" index="$index">
+            <img ng-src="{{banner.image}}" class="img-responsive" style="margin:auto;">
+            <!--<div class="carousel-caption">-->
+              <!--<h4>Slide {{slide.id}}</h4>-->
+              <!--<p>{{slide.text}}</p>-->
+            <!--</div>-->
+          </uib-slide>
+        </uib-carousel>
       </div>
       <div ui-view></div>
     </div>
