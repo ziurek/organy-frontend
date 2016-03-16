@@ -41,20 +41,30 @@
           </div>
         </div>
       </div>
-      <!-- interval="myInterval" no-wrap="noWrapSlides" track by banner.id" index="slide.id"-->
 
       <div>
         <uib-carousel class="carousel-fade" active="true" interval="3000">
           <uib-slide ng-repeat="banner in Banners track by $index" index="$index">
             <img ng-src="{{banner.image}}" class="img-responsive" style="margin:auto;">
-            <!--<div class="carousel-caption">-->
-              <!--<h4>Slide {{slide.id}}</h4>-->
-              <!--<p>{{slide.text}}</p>-->
-            <!--</div>-->
           </uib-slide>
         </uib-carousel>
       </div>
-      <div ui-view></div>
+      <div class="banner-bottom"></div>
+      <div class="page-content" ui-view></div>
+      <div class="footer">
+        <div class="clearfix typography">
+          <div class="pull-left">
+            Copyright © Zdzisław Mollin.
+          </div>
+          <div class="pull-right">
+            <strong>Organmistrzostwo Zdzisław Mollin.</strong>
+            89-651 Odry, ul. Ks. Zawadzińskiego 16. tel./fax +48 523 986 142, kom. +48 606 757 161
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="/images/moll_footer_bottom.jpg" class="img-responsive">
+      </div>
     </div>
   </div>
 

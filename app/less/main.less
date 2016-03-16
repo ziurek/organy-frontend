@@ -1,4 +1,6 @@
 /* app css stylesheet */
+@import "customBootstrap/custom-variables";
+
 html {
   background-color: #e9e3d7;
 }
@@ -8,7 +10,7 @@ html {
 }
 
 .background-div {
-  height: 500px;
+  height: 800px;
   background-image: url('/images/background.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -16,6 +18,51 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-position: top center;
+}
+
+.banner-bottom {
+  background-color: @banner-bottom-color;
+  height: 30px;
+}
+
+.footer {
+  background-color: @footer-color;
+  height: 100%;
+  font-size: 80%;
+  padding: 6px;
+}
+
+.page-content {
+  background-color: #f4efe0;
+  padding: 10px 30px 30px 30px;
+
+  .justify {
+    text-align: justify;
+  }
+
+  .typography {
+    color: #3f1e08;
+    font-weight: 300;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    .margined-top-small {
+      margin-top: 10px;
+    }
+
+    .margined-top {
+      margin-top: 20px;
+    }
+  }
 }
 
 .navbar-organy {
