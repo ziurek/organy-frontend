@@ -1,22 +1,40 @@
 
-define(['angular'], function(angular) {
+define([
+  'angular',
+  'scripts/howWeBuild/cover/cover',
+  'scripts/howWeBuild/counter/counter',
+  'scripts/howWeBuild/gameTracker/gameTracker',
+  'scripts/howWeBuild/registryTracker/registryTracker',
+  'scripts/howWeBuild/barge/barge',
+  'scripts/howWeBuild/bellows/bellows',
+  'scripts/howWeBuild/fans/fans',
+  'scripts/howWeBuild/pipes/pipes',
+  'scripts/howWeBuild/intonation/intonation',
+  'scripts/howWeBuild/montage/montage'
+], function(angular) {
   'use strict';
 
-  return angular.module('myApp.howWeBuild', [])
-    .config(function ($stateProvider) {
-      $stateProvider.state('howWeBuild', {
-        url: '/how-we-build',
-        views: {
-          "": {
-            controller: 'HowWeBuildCtrl',
-            templateUrl: 'scripts/howWeBuild/howWeBuild.html'
-          }
-        },
-        data: { pageTitle: 'Jak budujemy' }
-      });
-    })
-    .controller('HowWeBuildCtrl', function() {
-      console.log('czesc jestesmy w state nr 1');
+  return angular.module('myApp.howWeBuild', [
+    'myApp.howWeBuild.cover',
+    'myApp.howWeBuild.counter',
+    'myApp.howWeBuild.gameTracker',
+    'myApp.howWeBuild.registryTracker',
+    'myApp.howWeBuild.barge',
+    'myApp.howWeBuild.bellows',
+    'myApp.howWeBuild.fans',
+    'myApp.howWeBuild.pipes',
+    'myApp.howWeBuild.intonation',
+    'myApp.howWeBuild.montage'
+  ])
+  .config(function ($stateProvider) {
+    $stateProvider.state('howWeBuild', {
+      views: {
+        "": {
+          templateUrl: 'scripts/howWeBuild/howWeBuild.html'
+        }
+      },
+      data: { pageTitle: 'Jak budujemy' }
     });
+  });
 });
 

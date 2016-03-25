@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script data-main="scripts/amd/config" src="scripts/amd/require.js"></script>
 
+  <link rel="stylesheet" href="styles/font-awesome-4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/baguetteBox.min.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
 </head>
@@ -20,7 +22,7 @@
       <img src="/images/logo.jpg" class="img-responsive">
 
       <div class="navbar-organy">
-        <div class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-default" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
@@ -33,7 +35,26 @@
             <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed" >
               <li ng-class="{ active: isActive('/main-page') }"><a ui-sref="mainPage">Strona główna</a></li>
               <li ng-class="{ active: isActive('/about-company') }"><a ui-sref="aboutCompany">O firmie</a></li>
-              <li ng-class="{ active: isActive('/how-we-build') }"><a ui-sref="howWeBuild">Jak budujemy</a></li>
+              <!--<li ng-class="{ active: isActive('/how-we-build') }"><a ui-sref="howWeBuild">Jak budujemy</a></li>-->
+              <li uib-dropdown>
+                <a href="#" uib-dropdown-toggle ng-click="dropdownToggle()">
+                  Jak budujemy
+                  <ul class="dropdown-menu dropdown-menu-left" uib-dropdown-menu role="menu">
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/cover') }"><a ui-sref="howWeBuild.cover">Obudowa - szafa organowa</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/counter') }"><a ui-sref="howWeBuild.counter">Kontuar – stół gry</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/game-tracker') }"><a ui-sref="howWeBuild.gameTracker">Traktura gry</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/registry-tracker') }"><a ui-sref="howWeBuild.registryTracker">Traktura registrowa</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/barge') }"><a ui-sref="howWeBuild.barge">Wiatrownice</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/bellows') }"><a ui-sref="howWeBuild.bellows">Miechy</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/fans') }"><a ui-sref="howWeBuild.fans">Wentylatory</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/pipes') }"><a ui-sref="howWeBuild.pipes">Piszczałki</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/intonation') }"><a ui-sref="howWeBuild.intonation">Intonacja</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/montage') }"><a ui-sref="howWeBuild.montage">Montaż</a></li>
+                    <!--<li role="menuitem"><a href="#">Traktura gry – mechaniczna</a></li>-->
+                    <!--<li role="menuitem"><a href="#">Traktura registrowa – mechaniczna lub elektryczna</a></li>-->
+                  </ul>
+                </a>
+              </li>
               <li ng-class="{ active: isActive('/realisations') }"><a ui-sref="realisations">Realizacje</a></li>
               <li ng-class="{ active: isActive('/references') }"><a ui-sref="references">Referencje</a></li>
               <li ng-class="{ active: isActive('/contact') }"><a ui-sref="contact">Kontakt</a></li>

@@ -1,9 +1,10 @@
 
-define(['angular'], function(angular) {
+define([
+  'angular'
+], function(angular) {
   'use strict';
 
-  return angular.module('myApp.realisations', [])
-    .config(function ($stateProvider) {
+  return angular.module('myApp.realisations', []).config(function ($stateProvider) {
       $stateProvider.state('realisations', {
         url: '/realisations',
         views: {
@@ -16,7 +17,7 @@ define(['angular'], function(angular) {
       });
     })
     .controller('RealisationsCtrl', function() {
-      console.log('czesc jestesmy w state nr 1');
+
     });
 });
 

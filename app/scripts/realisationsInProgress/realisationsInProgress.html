@@ -1,0 +1,43 @@
+<span ng-repeat="r in realisations">
+  <div class="realisation-tile typography" ng-class="{
+    'border-up': $index !== 0,
+    'margined-top': $index === 0,
+    'not-allowed': !r.hasDetails }"
+     ng-click="r.hasDetails && realisationTileClick(r)"
+  >
+    <div class="row">
+      <div class="col-md-4">
+        <img ng-if="r.images[0]" ng-src="{{r.images[0].thumb}}" class="thumbnail">
+        <span ng-if="!r.images[0]" class="glyphicon glyphicon-camera thumbnail-no-image"></span>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <h4>
+            <strong>{{r.place}}</strong>
+          </h4>
+          <h5>
+            {{r.smallerTitle}}
+          </h5>
+        </div>
+        <div class="row">
+          <p class="inline">W trakcie</p>
+        </div>
+        <div class="row">
+          <p class="inline">Traktura:</p>
+          <h5 class="inline">{{r.tracker}}</h5>
+        </div>
+        <div class="row">
+          <p class="inline">Liczba głosów:</p>
+          <h5 class="inline">{{r.size}}</h5>
+        </div>
+        <div ng-if="r.manual" class="row">
+          <p class="inline">Manuały:</p>
+          <h5 class="inline">{{r.manual}}</h5>
+        </div>
+        <div ng-if="r.hasDetails" class="row margined-top">
+          <a>Szczegóły realizacji</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>

@@ -57,9 +57,35 @@ module.exports = function (grunt) {
             dist: {
                 src: 'app/*.css'
             }
-        }
+        },
+        responsive_images: {
+            myTask: {
+                options: {
+                    sizes: [{
+                        width: 320,
+                        height: 240
+                    }]
+                    //},{
+                    //    name: 'large',
+                    //    width: 640
+                    //},{
+                    //    name: "large",
+                    //    width: 1024,
+                    //    suffix: "_x2",
+                    //    quality: 60
+                    //}]
+                },
+                files: [{
+                    expand: true,
+                    src: ['app/images/realisations/**.{jpg,gif,png}'],
+                    cwd: 'test/',
+                    dest: 'tmp/'
+                }]
+            }
+        },
     });
     grunt.registerTask('serve', ['connect', 'less:development', 'watch']);
     grunt.registerTask('bootstrap', ['less:bootstrap']);
     grunt.registerTask('autoprefixer', ['postcss']);
+    grunt.registerTask('responsive_images', ['responsive_images']);
 };

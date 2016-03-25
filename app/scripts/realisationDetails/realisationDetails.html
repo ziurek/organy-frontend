@@ -1,0 +1,56 @@
+<div class="realisation-details gallery">
+  <a ng-href="{{realisation.images[0].img}}">
+    <img ng-src="{{realisation.images[0].img}}" class="img-responsive main-image center-block thumbnail">
+  </a>
+  <hr>
+  <div class="gallery-thumbs">
+    <span ng-repeat="r in realisation.images">
+      <a ng-if="$index > 0" ng-href="{{r.img}}">
+        <img src="{{r.thumb}}" class="thumbnail">
+      </a>
+    </span>
+  </div>
+  <hr>
+  <div class="typography">
+    <div class="row titles">
+      <h2 class="title">{{realisation.place}}</h2>
+      <h3 class="title">{{realisation.smallerTitle}}</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-right-md description-box">
+        <p>
+          Rok budowy: <strong>{{realisation.year}}</strong>
+        </p>
+        <p>
+          Liczba głosów: <strong>{{realisation.size}}</strong>
+        </p>
+        <p>
+          Manuały: <strong>{{realisation.manual}}</strong>
+        </p>
+        <p>
+          Traktura: <strong>{{realisation.tracker}}</strong>
+        </p>
+      </div>
+      <div class="col-md-8">
+        <p class="angular-with-newlines"><span class="description">{{realisation.description}}</span></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="voices-list row-centered">
+          <div class="col-sm-3 col-centered" ng-repeat="v in realisation.voices">
+            <ol>
+              <strong class="title">{{v.title}}</strong>
+              <p class="subtitle">{{v.subtitle}}</p>
+              <li ng-repeat="voice in v.voices">
+                {{voice.name}}
+                <span class="size">{{voice.size}}</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

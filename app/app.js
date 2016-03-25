@@ -10,7 +10,12 @@ define([
   'scripts/howWeBuild/howWeBuild',
   'scripts/realisations/realisations',
   'scripts/references/references',
-  'scripts/contact/contact'
+  'scripts/contact/contact',
+  'scripts/realisationsNew/realisationsNew',
+  'scripts/realisationsRenovations/realisationsRenovations',
+  'scripts/realisationsInProgress/realisationsInProgress',
+  'scripts/realisationDetails/realisationDetails',
+  'scripts/data'
 ], function(angular) {
   'use strict';
 
@@ -23,7 +28,12 @@ define([
     'myApp.howWeBuild',
     'myApp.realisations',
     'myApp.references',
-    'myApp.contact'
+    'myApp.contact',
+    'myApp.realisationsNew',
+    'myApp.realisationsRenovations',
+    'myApp.realisationsInProgress',
+    'myApp.newRealisations',
+    'myApp.realisationDetails'
   ])
   .config(['$urlRouterProvider', function ($urlRouterProvider) {
     $urlRouterProvider.otherwise('/main-page');
@@ -48,8 +58,14 @@ define([
     }
   ])
   .controller('AppCtrl', function($scope, $location, Banners) {
+    $scope.isOpen = false;
+
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
+    };
+
+    $scope.dropdownToggle = function() {
+      $scope.isOpen = !$scope.isOpen;
     };
 
     $scope.Banners = Banners;

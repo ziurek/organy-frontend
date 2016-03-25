@@ -16,7 +16,7 @@ define(['angular'], function(angular) {
       });
     })
     .controller('AboutCompanyCtrl', function() {
-      console.log('czesc jestesmy w state nr 1');
+      
     });
 });
 

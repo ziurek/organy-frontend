@@ -1,5 +1,5 @@
 
-define(['angular'], function(angular) {
+define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.references', [])
@@ -15,8 +15,10 @@ define(['angular'], function(angular) {
         data: { pageTitle: 'Referencje' }
       });
     })
-    .controller('ReferencesCtrl', function() {
-      console.log('czesc jestesmy w state nr 1');
+    .controller('ReferencesCtrl', function($timeout) {
+      $timeout(function () {
+        baguetteBox.run('.gallery');
+      });
     });
 });
 
