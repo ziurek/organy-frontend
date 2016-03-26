@@ -1,5 +1,5 @@
 
-define(['angular', 'jquery', 'lodash'], function(angular, $, _) {
+define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.realisationsRenovations', [])
@@ -12,15 +12,27 @@ define(['angular', 'jquery', 'lodash'], function(angular, $, _) {
             templateUrl: 'scripts/realisationsRenovations/realisationsRenovations.html'
           }
         },
-        data: { pageTitle: 'Realizacje | Renowacje' }
+        data: { pageTitle: 'Realizacje renowacje' }
       });
     })
-    .controller('RealisationsRenovationsCtrl', function($scope, renovationsRealisations, $state) {
+    .controller('RealisationsRenovationsCtrl', function($scope, renovationsRealisations, $state, $timeout) {
       $scope.realisations = renovationsRealisations;
+      var imageClicked = false;
 
       $scope.realisationTileClick = function(realisation) {
-        $state.go('realisationDetails', {state: 'renovations', place: encodeURI(realisation.place)});
+        if (!imageClicked) {
+          $state.go('realisationDetails', {state: 'renovations', place: encodeURI(realisation.place)});
+        }
+        imageClicked = false;
       };
+
+      $scope.mainImageClick = function () {
+        imageClicked = true;
+      };
+
+      $timeout(function () {
+        baguetteBox.run('.gallery');
+      });
     });
 });
 

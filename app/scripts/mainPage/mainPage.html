@@ -1,6 +1,7 @@
 <div class="typography">
+
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-7">
       <h2>Witamy</h2>
       <p>
         Twórczość organmistrzowska zakładu prowadzonego obecnie przez Zdzisława Mollin w Odrach k.
@@ -36,6 +37,19 @@
             <li>elementy traktury gry mechanicznej</li>
           </ul>
         </p>
+      </div>
+    </div>
+    <h3>Ostatnie realizacje:</h3>
+    <div class="col-md-5">
+      <div class="margined-top">
+        <uib-carousel class="carousel-fade" active="true" interval="3000">
+          <uib-slide ng-repeat="r in LastRealisations track by $index" index="$index" ng-click="realisationTileClick(r)" class="pointer">
+            <img ng-src="{{r.image}}" class="img-responsive" style="margin:auto;">
+            <div class="carousel-caption">
+              <h4>{{r.title}}</h4>
+            </div>
+          </uib-slide>
+        </uib-carousel>
       </div>
     </div>
   </div>

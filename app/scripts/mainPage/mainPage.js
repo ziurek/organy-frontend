@@ -15,8 +15,12 @@ define(['angular'], function(angular) {
         data: { pageTitle: 'Strona główna' }
       });
     })
-    .controller('MainPageCtrl', function() {
+    .controller('MainPageCtrl', function($scope, $state, LastRealisations) {
+      $scope.LastRealisations = LastRealisations;
 
+      $scope.realisationTileClick = function (realisation) {
+        $state.go('realisationDetails', {state: realisation.state, place: encodeURI(realisation.title)});
+      };
     });
 });
 

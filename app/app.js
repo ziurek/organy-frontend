@@ -43,6 +43,11 @@ define([
       $state.go('mainPage');
     });
   }])
+  .run(function($rootScope, $state) {
+    $rootScope.$on('$stateChangeStart', function() {
+        $rootScope.$state = $state
+    });
+  })
   .constant('Banners', [
     {
       image: '../images/banner_1.jpg'
@@ -55,6 +60,23 @@ define([
     },
     {
       image: '../images/banner_4.jpg'
+    }
+  ])
+  .constant('LastRealisations', [
+    {
+      image: '../images/realisations/thumbs/chojnice_2013/chojnice_prospekt.jpg',
+      title: 'Chojnice, kościół Zwiastowania NMP',
+      state: 'new'
+    },
+    {
+      image: '../images/realisations/thumbs/luxemburg_2016/1.jpg',
+      title: 'PERLE / Luxemburg - kościół',
+      state: 'in-progress'
+    },
+    {
+      image: '../images/realisations/thumbs/szczecinek_2014/prospekt.jpg',
+      title: 'Szczecinek, pw.Narodzenia NMP',
+      state: 'renovations'
     }
   ])
   .controller('AppCtrl', function($scope, $location, Banners) {

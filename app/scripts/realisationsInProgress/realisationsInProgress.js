@@ -1,5 +1,5 @@
 
-define(['angular', 'jquery', 'lodash'], function(angular, $, _) {
+define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.realisationsInProgress', [])
@@ -12,15 +12,27 @@ define(['angular', 'jquery', 'lodash'], function(angular, $, _) {
             templateUrl: 'scripts/realisationsInProgress/realisationsInProgress.html'
           }
         },
-        data: { pageTitle: 'Realizacje | W trakcie' }
+        data: {pageTitle: 'Realizacje w trakcie'}
       });
     })
-    .controller('RealisationsInProgressCtrl', function($scope, inProgressRealisations, $state) {
+    .controller('RealisationsInProgressCtrl', function ($scope, inProgressRealisations, $state, $timeout) {
       $scope.realisations = inProgressRealisations;
+      var imageClicked = false;
 
-      $scope.realisationTileClick = function(realisation) {
-        $state.go('realisationDetails', {state: 'in-progress', place: encodeURI(realisation.place)});
+      $scope.realisationTileClick = function (realisation) {
+        if (!imageClicked) {
+          $state.go('realisationDetails', {state: 'in-progress', place: encodeURI(realisation.place)});
+        }
+        imageClicked = false;
       };
+
+      $scope.mainImageClick = function () {
+        imageClicked = true;
+      };
+
+      $timeout(function () {
+        baguetteBox.run('.gallery');
+      });
     });
 });
 
