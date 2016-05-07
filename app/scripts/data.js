@@ -174,12 +174,12 @@ define(['angular'], function(angular) {
       manual: 'pozytyw',
       images: [
         {
-          thumb: '/images/realisations/thumbs/krakow_am_2011/kontuar1.JPG',
-          img: '/images/realisations/krakow_am_2011/kontuar1.JPG'
+          thumb: '/images/realisations/thumbs/krakow_am_2011/kontuar1.jpg',
+          img: '/images/realisations/krakow_am_2011/kontuar1.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/krakow_am_2011/kontuar2.JPG',
-          img: '/images/realisations/krakow_am_2011/kontuar2.JPG'
+          thumb: '/images/realisations/thumbs/krakow_am_2011/kontuar2.jpg',
+          img: '/images/realisations/krakow_am_2011/kontuar2.jpg'
         }
       ],
       hasDetails: true
@@ -348,8 +348,8 @@ define(['angular'], function(angular) {
       manual: 'II+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/gdansk_am_2008/kontuar.JPG',
-          img: '/images/realisations/gdansk_am_2008/kontuar.JPG'
+          thumb: '/images/realisations/thumbs/gdansk_am_2008/kontuar.jpg',
+          img: '/images/realisations/gdansk_am_2008/kontuar.jpg'
         }
       ]
     },
@@ -361,8 +361,8 @@ define(['angular'], function(angular) {
       manual: 'pozytyw',
       images: [
         {
-          thumb: '/images/realisations/thumbs/zielona_g_2008/zielona_g_2008.JPG',
-          img: '/images/realisations/zielona_g_2008/zielona_g_2008.JPG'
+          thumb: '/images/realisations/thumbs/zielona_g_2008/zielona_g_2008.jpg',
+          img: '/images/realisations/zielona_g_2008/zielona_g_2008.jpg'
         }
       ]
     },
@@ -374,12 +374,12 @@ define(['angular'], function(angular) {
       manual: 'II+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/krakow_2008/prospekt.JPG',
-          img: '/images/realisations/krakow_2008/prospekt.JPG'
+          thumb: '/images/realisations/thumbs/krakow_2008/prospekt.jpg',
+          img: '/images/realisations/krakow_2008/prospekt.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/krakow_2008/kontuar.JPG',
-          img: '/images/realisations/krakow_2008/kontuar.JPG'
+          thumb: '/images/realisations/thumbs/krakow_2008/kontuar.jpg',
+          img: '/images/realisations/krakow_2008/kontuar.jpg'
         }
       ],
       hasDetails: true
@@ -392,12 +392,12 @@ define(['angular'], function(angular) {
       manual: 'III+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/swiety_krzyz_2007/SwietyKrzyzProspekt.JPG',
-          img: '/images/realisations/swiety_krzyz_2007/SwietyKrzyzProspekt.JPG'
+          thumb: '/images/realisations/thumbs/swiety_krzyz_2007/SwietyKrzyzProspekt.jpg',
+          img: '/images/realisations/swiety_krzyz_2007/SwietyKrzyzProspekt.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/swiety_krzyz_2007/SwietyKrzyzkontuar.JPG',
-          img: '/images/realisations/swiety_krzyz_2007/SwietyKrzyzkontuar.JPG'
+          thumb: '/images/realisations/thumbs/swiety_krzyz_2007/SwietyKrzyzkontuar.jpg',
+          img: '/images/realisations/swiety_krzyz_2007/SwietyKrzyzkontuar.jpg'
         }
       ],
       hasDetails: true
@@ -410,12 +410,12 @@ define(['angular'], function(angular) {
       manual: 'pozytyw',
       images: [
         {
-          thumb: '/images/realisations/thumbs/gdansk_2007/1.JPG',
-          img: '/images/realisations/gdansk_2007/1.JPG'
+          thumb: '/images/realisations/thumbs/gdansk_2007/1.jpg',
+          img: '/images/realisations/gdansk_2007/1.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/gdansk_2007/2.JPG',
-          img: '/images/realisations/gdansk_2007/2.JPG'
+          thumb: '/images/realisations/thumbs/gdansk_2007/2.jpg',
+          img: '/images/realisations/gdansk_2007/2.jpg'
         }
       ],
       hasDetails: true
@@ -621,12 +621,12 @@ define(['angular'], function(angular) {
       manual: 'II+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/kiepino_2005/1.JPG',
-          img: '/images/realisations/kiepino_2005/1.JPG'
+          thumb: '/images/realisations/thumbs/kiepino_2005/1.jpg',
+          img: '/images/realisations/kiepino_2005/1.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/kiepino_2005/2.JPG',
-          img: '/images/realisations/kiepino_2005/2.JPG'
+          thumb: '/images/realisations/thumbs/kiepino_2005/2.jpg',
+          img: '/images/realisations/kiepino_2005/2.jpg'
         }
       ],
       hasDetails: true
@@ -639,8 +639,8 @@ define(['angular'], function(angular) {
       manual: 'II+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/poznan_2004/1.JPG',
-          img: '/images/realisations/poznan_2004/1.JPG'
+          thumb: '/images/realisations/thumbs/poznan_2004/1.jpg',
+          img: '/images/realisations/poznan_2004/1.jpg'
         }
       ]
     },
@@ -661,8 +661,8 @@ define(['angular'], function(angular) {
       manual: 'III+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/pelplin_2003/1.JPG',
-          img: '/images/realisations/pelplin_2003/1.JPG'
+          thumb: '/images/realisations/thumbs/pelplin_2003/1.jpg',
+          img: '/images/realisations/pelplin_2003/1.jpg'
         }
       ]
     },
@@ -716,12 +716,12 @@ define(['angular'], function(angular) {
       manual: 'III+P',
       images: [
         {
-          thumb: '/images/realisations/thumbs/gdansk_2000/1.JPG',
-          img: '/images/realisations/gdansk_2000/1.JPG'
+          thumb: '/images/realisations/thumbs/gdansk_2000/1.jpg',
+          img: '/images/realisations/gdansk_2000/1.jpg'
         },
         {
-          thumb: '/images/realisations/thumbs/gdansk_2000/2.JPG',
-          img: '/images/realisations/gdansk_2000/2.JPG'
+          thumb: '/images/realisations/thumbs/gdansk_2000/2.jpg',
+          img: '/images/realisations/gdansk_2000/2.jpg'
         }
       ],
       hasDetails: true

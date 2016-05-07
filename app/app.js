@@ -64,17 +64,17 @@ define([
   ])
   .constant('LastRealisations', [
     {
-      image: '../images/realisations/thumbs/chojnice_2013/chojnice_prospekt.jpg',
+      image: '../images/realisations/chojnice_2013/chojnice_prospekt.jpg',
       title: 'Chojnice, kościół Zwiastowania NMP',
       state: 'new'
     },
     {
-      image: '../images/realisations/thumbs/luxemburg_2016/1.jpg',
+      image: '../images/realisations/luxemburg_2016/1.jpg',
       title: 'PERLE / Luxemburg - kościół',
       state: 'in-progress'
     },
     {
-      image: '../images/realisations/thumbs/szczecinek_2014/prospekt.jpg',
+      image: '../images/realisations/szczecinek_2014/prospekt.jpg',
       title: 'Szczecinek, pw.Narodzenia NMP',
       state: 'renovations'
     }

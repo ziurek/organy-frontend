@@ -6,7 +6,7 @@
   <div class="gallery-thumbs">
     <span ng-repeat="r in realisation.images">
       <a ng-if="$index > 0" ng-href="{{r.img}}">
-        <img src="{{r.thumb}}" class="thumbnail">
+        <img ng-src="{{r.thumb}}" class="thumbnail">
       </a>
     </span>
   </div>
