@@ -12,7 +12,7 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
             templateUrl: 'scripts/realisationsRenovations/realisationsRenovations.html'
           }
         },
-        data: { pageTitle: 'Realizacje renowacje' }
+        data: { pageTitle: 'REALISATIONS.RENOVATIONS_TITLE' }
       });
     })
     .controller('RealisationsRenovationsCtrl', function($scope, renovationsRealisations, $state, $timeout) {

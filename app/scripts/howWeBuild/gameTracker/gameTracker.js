@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/gameTracker/gameTracker.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Traktura gry – mechaniczna' }
+      data: { pageTitle: 'HOW_WE_BUILD.GAME_TRACKER.TITLE' }
     });
   })
   .controller('HowWeBuildGameTrackerCtrl', function() {

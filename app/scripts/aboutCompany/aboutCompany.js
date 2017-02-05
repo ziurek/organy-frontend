@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/aboutCompany/aboutCompany.html'
           }
         },
-        data: { pageTitle: 'O firmie' }
+        data: { pageTitle: 'ABOUT_COMPANY.TITLE' }
       });
     })
     .controller('AboutCompanyCtrl', function() {

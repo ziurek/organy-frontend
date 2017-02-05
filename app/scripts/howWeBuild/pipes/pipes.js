@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/pipes/pipes.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Piszczałki' }
+      data: { pageTitle: 'HOW_WE_BUILD.PIPES.TITLE' }
     });
   })
   .controller('HowWeBuildPipesCtrl', function() {

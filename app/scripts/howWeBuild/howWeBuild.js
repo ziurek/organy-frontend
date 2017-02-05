@@ -33,7 +33,7 @@ define([
           templateUrl: 'scripts/howWeBuild/howWeBuild.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy' }
+      data: { pageTitle: 'HOW_WE_BUILD.TITLE' }
     });
   });
 });

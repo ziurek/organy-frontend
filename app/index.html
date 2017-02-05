@@ -2,7 +2,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title ng-bind="$state.current.data.pageTitle + ' &raquo; Organmistrzostwo Zdzisław Mollin'">Organmistrzostwo Zdzisław Mollin</title>
+  <title ng-if="$state.current.data.pageTitle != null">
+    {{$state.current.data.pageTitle | translate}} &raquo; {{::'PAGE_TITLE' | translate}}
+  </title>
+  <title ng-if="$state.current.data.pageTitle == null">
+    {{::'PAGE_TITLE' | translate}}
+  </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script data-main="scripts/amd/config" src="scripts/amd/require.js"></script>
@@ -33,31 +38,28 @@
               </button>
             </div>
             <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed" >
-              <li ng-class="{ active: isActive('/main-page') }"><a ui-sref="mainPage">Strona główna</a></li>
-              <li ng-class="{ active: isActive('/about-company') }"><a ui-sref="aboutCompany">O firmie</a></li>
-              <!--<li ng-class="{ active: isActive('/how-we-build') }"><a ui-sref="howWeBuild">Jak budujemy</a></li>-->
-              <li uib-dropdown>
+              <li ng-class="{ active: isActive('/main-page') }" ng-cloak><a ui-sref="mainPage">{{::'INDEX.MAIN_PAGE' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/about-company') }" ng-cloak><a ui-sref="aboutCompany">{{::'INDEX.ABOUT_COMPANY' | translate}}</a></li>
+              <li uib-dropdown ng-cloak>
                 <a href="#" uib-dropdown-toggle ng-click="dropdownToggle()">
-                  Jak budujemy
+                  {{::'INDEX.HOW_WE_BUILD' | translate}}
                   <ul class="dropdown-menu dropdown-menu-left" uib-dropdown-menu role="menu">
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/cover') }"><a ui-sref="howWeBuild.cover">Obudowa - szafa organowa</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/counter') }"><a ui-sref="howWeBuild.counter">Kontuar – stół gry</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/game-tracker') }"><a ui-sref="howWeBuild.gameTracker">Traktura gry</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/registry-tracker') }"><a ui-sref="howWeBuild.registryTracker">Traktura registrowa</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/barge') }"><a ui-sref="howWeBuild.barge">Wiatrownice</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/bellows') }"><a ui-sref="howWeBuild.bellows">Miechy</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/fans') }"><a ui-sref="howWeBuild.fans">Wentylatory</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/pipes') }"><a ui-sref="howWeBuild.pipes">Piszczałki</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/intonation') }"><a ui-sref="howWeBuild.intonation">Intonacja</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/montage') }"><a ui-sref="howWeBuild.montage">Montaż</a></li>
-                    <!--<li role="menuitem"><a href="#">Traktura gry – mechaniczna</a></li>-->
-                    <!--<li role="menuitem"><a href="#">Traktura registrowa – mechaniczna lub elektryczna</a></li>-->
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/cover') }"><a ui-sref="howWeBuild.cover">{{::'INDEX.L1' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/counter') }"><a ui-sref="howWeBuild.counter">{{::'INDEX.L2' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/game-tracker') }"><a ui-sref="howWeBuild.gameTracker">{{::'INDEX.L3' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/registry-tracker') }"><a ui-sref="howWeBuild.registryTracker">{{::'INDEX.L4' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/barge') }"><a ui-sref="howWeBuild.barge">{{::'INDEX.L5' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/bellows') }"><a ui-sref="howWeBuild.bellows">{{::'INDEX.L6' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/fans') }"><a ui-sref="howWeBuild.fans">{{::'INDEX.L7' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/pipes') }"><a ui-sref="howWeBuild.pipes">{{::'INDEX.L8' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/intonation') }"><a ui-sref="howWeBuild.intonation">{{::'INDEX.L9' | translate}}</a></li>
+                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/montage') }"><a ui-sref="howWeBuild.montage">{{::'INDEX.L10' | translate}}</a></li>
                   </ul>
                 </a>
               </li>
-              <li ng-class="{ active: isActive('/realisations') }"><a ui-sref="realisations">Realizacje</a></li>
-              <li ng-class="{ active: isActive('/references') }"><a ui-sref="references">Referencje</a></li>
-              <li ng-class="{ active: isActive('/contact') }"><a ui-sref="contact">Kontakt</a></li>
+              <li ng-class="{ active: isActive('/realisations') }" ng-cloak><a ui-sref="realisations">{{::'INDEX.REALISATIONS' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/references') }" ng-cloak><a ui-sref="references">{{::'INDEX.REFERENCES' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/contact') }" ng-cloak><a ui-sref="contact">{{::'INDEX.CONTACT' | translate}}</a></li>
             </ul>
           </div>
         </div>
@@ -78,7 +80,7 @@
             Copyright © Zdzisław Mollin.
           </div>
           <div class="pull-right">
-            <strong>Organmistrzostwo Zdzisław Mollin.</strong>
+            <strong>{{::'PAGE_TITLE' | translate}}.</strong>
             89-651 Odry, ul. Ks. Zawadzińskiego 16. tel./fax +48 523 986 142, kom. +48 606 757 161
           </div>
         </div>

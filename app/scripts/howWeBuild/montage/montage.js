@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/montage/montage.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Montaż' }
+      data: { pageTitle: 'HOW_WE_BUILD.MONTAGE.TITLE' }
     });
   })
   .controller('HowWeBuildMontageCtrl', function() {

@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/cover/cover.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Obudowa - szafa organowa' }
+      data: { pageTitle: 'HOW_WE_BUILD.COVER.TITLE' }
     });
   })
   .controller('HowWeBuildCoverCtrl', function() {

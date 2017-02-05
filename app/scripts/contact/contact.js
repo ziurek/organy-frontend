@@ -25,11 +25,11 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/contact/contact.html'
           }
         },
-        data: { pageTitle: 'Kontakt' }
+        data: { pageTitle: 'CONTACT.TITLE' }
       });
     })
     .controller('ContactCtrl', function() {
-      console.log('czesc jestesmy w state nr 1');
+
     });
 });
 

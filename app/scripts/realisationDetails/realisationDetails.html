@@ -19,19 +19,19 @@
     <div class="row">
       <div class="col-md-4 text-right-md description-box">
         <p>
-          Rok budowy: <strong>{{realisation.year}}</strong>
+          {{::'REALISATIONS.BUILT_YEAR' | translate}} <strong>{{realisation.year}}</strong>
         </p>
         <p ng-if="realisation.creator">
-          Twórca: <strong>{{realisation.creator}}</strong>
+          {{::'REALISATIONS.CREATOR' | translate}} <strong>{{realisation.creator}}</strong>
         </p>
         <p>
-          Liczba głosów: <strong>{{realisation.size}}</strong>
+          {{::'REALISATIONS.VOICES' | translate}} <strong>{{realisation.size}}</strong>
         </p>
         <p>
-          Manuały: <strong>{{realisation.manual}}</strong>
+          {{::'REALISATIONS.MANUALS' | translate}} <strong>{{realisation.manual}}</strong>
         </p>
         <p>
-          Traktura: <strong>{{realisation.tracker}}</strong>
+          {{::'REALISATIONS.TRACKER' | translate}} <strong>{{realisation.tracker}}</strong>
         </p>
       </div>
       <div class="col-md-8">

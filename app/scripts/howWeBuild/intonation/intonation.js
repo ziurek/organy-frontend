@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/howWeBuild/intonation/intonation.html'
           }
         },
-        data: { pageTitle: 'Jak budujemy | Intonacja' }
+        data: { pageTitle: 'HOW_WE_BUILD.INTONATION.TITLE' }
       });
     })
     .controller('HowWeBuildIntonationCtrl', function() {

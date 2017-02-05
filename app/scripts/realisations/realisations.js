@@ -13,7 +13,7 @@ define([
             templateUrl: 'scripts/realisations/realisations.html'
           }
         },
-        data: { pageTitle: 'Realizacje' }
+        data: { pageTitle: 'REALISATIONS.TITLE' }
       });
     })
     .controller('RealisationsCtrl', function() {

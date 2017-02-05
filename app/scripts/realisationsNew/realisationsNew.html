@@ -20,23 +20,23 @@
           </h5>
         </div>
         <div class="row">
-          <p class="inline">Rok:</p>
+          <p class="inline">{{::'REALISATIONS.YEAR' | translate}}</p>
           <h5 class="inline">{{r.year}}</h5>
         </div>
         <div class="row">
-          <p class="inline">Traktura:</p>
+          <p class="inline">{{::'REALISATIONS.TRACKER' | translate}}</p>
           <h5 class="inline">{{r.tracker}}</h5>
         </div>
         <div class="row">
-          <p class="inline">Liczba głosów:</p>
+          <p class="inline">{{::'REALISATIONS.VOICES' | translate}}</p>
           <h5 class="inline">{{r.size}}</h5>
         </div>
         <div ng-if="r.manual" class="row">
-          <p class="inline">Manuały:</p>
+          <p class="inline">{{::'REALISATIONS.MANUALS' | translate}}</p>
           <h5 class="inline">{{r.manual}}</h5>
         </div>
         <div ng-if="r.hasDetails" class="row margined-top">
-          <a>Szczegóły realizacji</a>
+          <a>{{::'REALISATIONS.DETAILS' | translate}}</a>
         </div>
       </div>
     </div>

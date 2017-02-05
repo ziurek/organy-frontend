@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/fans/fans.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Wentylatory' }
+      data: { pageTitle: 'HOW_WE_BUILD.FANS.TITLE' }
     });
   })
   .controller('HowWeBuildFansCtrl', function() {

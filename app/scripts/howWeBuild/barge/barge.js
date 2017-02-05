@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/howWeBuild/barge/barge.html'
           }
         },
-        data: { pageTitle: 'Jak budujemy | Wiatrownice' }
+        data: { pageTitle: 'HOW_WE_BUILD.BARGE.TITLE' }
       });
     })
     .controller('HowWeBuildBargeCtrl', function() {

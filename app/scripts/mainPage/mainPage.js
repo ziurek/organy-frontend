@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/mainPage/mainPage.html'
           }
         },
-        data: { pageTitle: 'Strona główna' }
+        data: { pageTitle: 'MAIN_PAGE.PAGE_TITLE' }
       });
     })
     .controller('MainPageCtrl', function($scope, $state, LastRealisations) {

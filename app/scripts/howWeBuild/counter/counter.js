@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/howWeBuild/counter/counter.html'
           }
         },
-        data: { pageTitle: 'Jak budujemy | Kontuar - stół gry' }
+        data: { pageTitle: 'HOW_WE_BUILD.COUNTER.TITLE' }
       });
     })
     .controller('HowWeBuildCounterCtrl', function() {

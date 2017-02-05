@@ -8,6 +8,7 @@ require.config({
     'uiBootstrap': 'bower_components/angular-bootstrap/ui-bootstrap',
     'uiBootstrapTpls': 'bower_components/angular-bootstrap/ui-bootstrap-tpls',
     'angularAnimate': 'bower_components/angular-animate/angular-animate',
+    'angularTranslate': 'bower_components/angular-translate/angular-translate.min',
     'lodash': 'bower_components/lodash/dist/lodash',
     'baguetteBox': 'bower_components/baguettebox.js/dist/baguetteBox.min'
   },
@@ -26,6 +27,9 @@ require.config({
       deps: ['angular']
     },
     'angularAnimate': {
+      deps: ['angular']
+    },
+    'angularTranslate': {
       deps: ['angular']
     },
     bootstrap: {

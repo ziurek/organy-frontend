@@ -12,7 +12,7 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
             templateUrl: 'scripts/realisationsInProgress/realisationsInProgress.html'
           }
         },
-        data: {pageTitle: 'Realizacje w trakcie'}
+        data: {pageTitle: 'REALISATIONS.REALISATIONS_IN_PROGRESS'}
       });
     })
     .controller('RealisationsInProgressCtrl', function ($scope, inProgressRealisations, $state, $timeout) {

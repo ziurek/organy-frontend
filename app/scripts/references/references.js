@@ -12,7 +12,7 @@ define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
             templateUrl: 'scripts/references/references.html'
           }
         },
-        data: { pageTitle: 'Referencje' }
+        data: { pageTitle: 'REFERENCES.TITLE' }
       });
     })
     .controller('ReferencesCtrl', function($timeout) {

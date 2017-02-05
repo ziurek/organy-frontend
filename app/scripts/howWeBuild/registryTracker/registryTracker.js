@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
           templateUrl: 'scripts/howWeBuild/registryTracker/registryTracker.html'
         }
       },
-      data: { pageTitle: 'Jak budujemy | Traktura registrowa – mechaniczna lub elektryczna' }
+      data: { pageTitle: 'HOW_WE_BUILD.REGISTRY_TRACKER.TITLE' }
     });
   })
   .controller('HowWeBuildRegistryTrackerCtrl', function() {

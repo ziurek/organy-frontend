@@ -12,7 +12,7 @@ define(['angular'], function(angular) {
             templateUrl: 'scripts/howWeBuild/bellows/bellows.html'
           }
         },
-        data: { pageTitle: 'Jak budujemy | Miechy' }
+        data: { pageTitle: 'HOW_WE_BUILD.BELLOWS.TITLE' }
       });
     })
     .controller('HowWeBuildBellowsCtrl', function() {

@@ -15,7 +15,8 @@ define([
   'scripts/realisationsRenovations/realisationsRenovations',
   'scripts/realisationsInProgress/realisationsInProgress',
   'scripts/realisationDetails/realisationDetails',
-  'scripts/data'
+  'scripts/data',
+  './translations'
 ], function(angular) {
   'use strict';
 
@@ -23,6 +24,7 @@ define([
     'ui.router',
     'ui.bootstrap',
     'ngAnimate',
+    'myApp.translations',
     'myApp.mainPage',
     'myApp.aboutCompany',
     'myApp.howWeBuild',
