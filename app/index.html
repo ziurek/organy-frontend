@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="styles/font-awesome-4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/baguetteBox.min.css">
+  <link rel="stylesheet" href="styles/flag-icon-css/css/flag-icon.min.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
 </head>
@@ -24,9 +25,23 @@
 
   <div class="background-div" ng-controller="AppCtrl">
     <div class="container">
-      <img src="/images/logo.jpg" class="img-responsive">
+      <div class="banner-top">
+        <div class="flags">
+          <button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'en'}" ng-click="changeLanguage('en')">
+            <span class="flag-icon flag-icon-gb"></span>
+          </button>
+          <button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'de'}" ng-click="changeLanguage('de')">
+            <span class="flag-icon flag-icon-de"></span>
+          </button>
+          <button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'pl'}" ng-click="changeLanguage('pl')">
+            <span class="flag-icon flag-icon-pl"></span>
+          </button>
+        </div>
 
-      <div class="navbar-organy">
+        <img src="/images/logo.jpg" class="img-responsive">
+      </div>
+
+      <div id="hide-before-load" class="navbar-organy" style="display: none;">
         <div class="navbar-default" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -37,7 +52,7 @@
                 <span class="icon-bar"></span>
               </button>
             </div>
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed" >
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed">
               <li ng-class="{ active: isActive('/main-page') }" ng-cloak><a ui-sref="mainPage">{{::'INDEX.MAIN_PAGE' | translate}}</a></li>
               <li ng-class="{ active: isActive('/about-company') }" ng-cloak><a ui-sref="aboutCompany">{{::'INDEX.ABOUT_COMPANY' | translate}}</a></li>
               <li uib-dropdown ng-cloak>

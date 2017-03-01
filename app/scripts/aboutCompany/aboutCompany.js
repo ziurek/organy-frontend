@@ -1,5 +1,5 @@
 
-define(['angular'], function(angular) {
+define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.aboutCompany', [])
@@ -15,8 +15,10 @@ define(['angular'], function(angular) {
         data: { pageTitle: 'ABOUT_COMPANY.TITLE' }
       });
     })
-    .controller('AboutCompanyCtrl', function() {
-      
+    .controller('AboutCompanyCtrl', function($timeout) {
+      $timeout(function () {
+        baguetteBox.run('.gallery');
+      });
     });
 });
 

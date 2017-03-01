@@ -52,7 +52,8 @@ define(['angular', 'angularTranslate'], function(angular) {
           P6: 'W pracy zawodowej wspierał go od 1980 roku syn Zdzisław Mollin, z zawodu elektronik, który z równym powodzeniem kontynuuje dzieło swego ojca. Uhonorowany w 1985 roku świadectwem czeladniczym oraz w 1991 roku dyplomem mistrzowskim doskonalił swoje wykształcenie organmistrzowskie w firmach niemieckich (Heuss i Kreienbrink).',
           P7: 'Wspólnym dziełem Józefa i Zdzisława Mollinów są nowe organy kościoła NMP Królowej Różańca Świętego w Gdańsku-Przymorzu i kościoła św. Stanisława bpa w Gdańsku-Wrzeszczu oraz przeprowadzona w ostatnich latach rekonstrukcja zniszczonych wieloma przebudowami organów kościoła zamkowego pw. św. Jacka w Słupsku. Realizację powyższych prac organmistrzowskich umożliwia rozbudowany i wyposażony w najnowsze i specjalistyczne urządzenia warsztat z halą montażową i składem sezonowego drewna liściastego i iglastego.',
           P8: 'Przeprowadzona w 2003 roku rekonstrukcja barokowego instrumentu bocznych organów Bazyliki Katedralnej w Pelplinie stanowi uwieńczenie całej, kilkudziesięcioletniej działalności organmistrzowskiej Józefa i Zdzisława Mollinów.',
-          P9: 'Zdzisław Mollin należy do międzynarodowego stowarzyszenia miłośników organów GDO, dzięki czemu ma stały dostęp do fachowej literatury organowej oraz stały kontakt z firmami zagranicznymi.'
+          P9: 'Zdzisław Mollin prowadząc samodzielnie firmę zbudował wiele nowych instrumentów oraz wykonał renowacje wielu zabytkowych organów na terenie całego kraju. Za całokształt 50 letniej działalności firmy, Zdzisław Mollin został w roku 2007 uhonorowany przez Biskupa Pelplińskiego Jana Bernarda Szlagę, ',
+          P10: 'medalem za zasługi dla Diecezji Pelplińskiej.'
         },
         HOW_WE_BUILD: {
           TITLE: 'Jak budujemy',
@@ -132,6 +133,12 @@ define(['angular', 'angularTranslate'], function(angular) {
         }
       });
 
+      $translateProvider.translations('de', {
+        MAIN_PAGE: {
+          HELLO: 'srakke'
+        }
+      });
+      $translateProvider.fallbackLanguage(['en', 'pl']);
       $translateProvider.preferredLanguage('pl');
     }]);
 });

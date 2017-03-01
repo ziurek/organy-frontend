@@ -1,8 +1,8 @@
 
 define([
   'angular',
+  './translations',
   'uiRouter',
-  'uiBootstrap',
   'uiBootstrapTpls',
   'angularAnimate',
   'scripts/mainPage/mainPage',
@@ -15,8 +15,7 @@ define([
   'scripts/realisationsRenovations/realisationsRenovations',
   'scripts/realisationsInProgress/realisationsInProgress',
   'scripts/realisationDetails/realisationDetails',
-  'scripts/data',
-  './translations'
+  'scripts/data'
 ], function(angular) {
   'use strict';
 
@@ -81,7 +80,10 @@ define([
       state: 'renovations'
     }
   ])
-  .controller('AppCtrl', function($scope, $location, Banners) {
+  .controller('AppCtrl', ['$scope', '$location', 'Banners', '$translate', '$state',
+  function($scope, $location, Banners, $translate, $state)
+  {
+    $('#hide-before-load').css('display', 'inline');
     $scope.isOpen = false;
 
     $scope.isActive = function (viewLocation) {
@@ -92,7 +94,16 @@ define([
       $scope.isOpen = !$scope.isOpen;
     };
 
+    $scope.changeLanguage = function (key) {
+      $translate.use(key);
+      $state.reload();
+    };
+
+    $scope.getLanguage = function () {
+      return $translate.use();
+    };
+
     $scope.Banners = Banners;
-  });
+  }]);
 });
 
