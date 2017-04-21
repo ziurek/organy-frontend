@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.mainPage', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('mainPage', {
         url: '/main-page',
         views: {
@@ -14,13 +14,13 @@ define(['angular'], function(angular) {
         },
         data: { pageTitle: 'MAIN_PAGE.PAGE_TITLE' }
       });
-    })
-    .controller('MainPageCtrl', function($scope, $state, LastRealisations) {
+    }])
+    .controller('MainPageCtrl', ['$scope', '$state', 'LastRealisations', function($scope, $state, LastRealisations) {
       $scope.LastRealisations = LastRealisations;
 
       $scope.realisationTileClick = function (realisation) {
         $state.go('realisationDetails', {state: realisation.state, place: encodeURI(realisation.title)});
       };
-    });
+    }]);
 });
 

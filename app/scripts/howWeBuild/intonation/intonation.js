@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.howWeBuild.intonation', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('howWeBuild.intonation', {
         url: '/how-we-build/intonation',
         views: {
@@ -14,7 +14,7 @@ define(['angular'], function(angular) {
         },
         data: { pageTitle: 'HOW_WE_BUILD.INTONATION.TITLE' }
       });
-    })
+    }])
     .controller('HowWeBuildIntonationCtrl', function() {
 
     });

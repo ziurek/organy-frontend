@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.howWeBuild.pipes', [])
-  .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
     $stateProvider.state('howWeBuild.pipes', {
       url: '/how-we-build/pipes',
       views: {
@@ -14,7 +14,7 @@ define(['angular'], function(angular) {
       },
       data: { pageTitle: 'HOW_WE_BUILD.PIPES.TITLE' }
     });
-  })
+  }])
   .controller('HowWeBuildPipesCtrl', function() {
 
   });

@@ -44,11 +44,11 @@ define([
       $state.go('mainPage');
     });
   }])
-  .run(function($rootScope, $state) {
+  .run(['$rootScope', '$state', function($rootScope, $state) {
     $rootScope.$on('$stateChangeStart', function() {
         $rootScope.$state = $state
     });
-  })
+  }])
   .constant('Banners', [
     {
       image: '../images/banner_1.jpg'

@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.howWeBuild.counter', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('howWeBuild.counter', {
         url: '/how-we-build/counter',
         views: {
@@ -14,7 +14,7 @@ define(['angular'], function(angular) {
         },
         data: { pageTitle: 'HOW_WE_BUILD.COUNTER.TITLE' }
       });
-    })
+    }])
     .controller('HowWeBuildCounterCtrl', function() {
 
     });

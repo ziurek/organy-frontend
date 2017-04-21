@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.howWeBuild.bellows', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('howWeBuild.bellows', {
         url: '/how-we-build/bellows',
         views: {
@@ -14,7 +14,7 @@ define(['angular'], function(angular) {
         },
         data: { pageTitle: 'HOW_WE_BUILD.BELLOWS.TITLE' }
       });
-    })
+    }])
     .controller('HowWeBuildBellowsCtrl', function() {
 
     });

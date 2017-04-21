@@ -3,7 +3,7 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
   'use strict';
 
   return angular.module('myApp.realisationsInProgress', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('realisationsInProgress', {
         url: '/realisations/in-progress',
         views: {
@@ -14,8 +14,9 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
         },
         data: {pageTitle: 'REALISATIONS.REALISATIONS_IN_PROGRESS'}
       });
-    })
-    .controller('RealisationsInProgressCtrl', function ($scope, inProgressRealisations, $state, $timeout) {
+    }])
+    .controller('RealisationsInProgressCtrl',
+    ['$scope', 'inProgressRealisations', '$state', '$timeout', function ($scope, inProgressRealisations, $state, $timeout) {
       $scope.realisations = inProgressRealisations;
       var imageClicked = false;
 
@@ -33,6 +34,6 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
       $timeout(function () {
         baguetteBox.run('.gallery');
       });
-    });
+    }]);
 });
 

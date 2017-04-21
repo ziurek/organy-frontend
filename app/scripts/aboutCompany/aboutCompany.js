@@ -3,7 +3,7 @@ define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.aboutCompany', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('aboutCompany', {
         url: '/about-company',
         views: {
@@ -14,11 +14,11 @@ define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
         },
         data: { pageTitle: 'ABOUT_COMPANY.TITLE' }
       });
-    })
-    .controller('AboutCompanyCtrl', function($timeout) {
+    }])
+    .controller('AboutCompanyCtrl', ['$timeout', function($timeout) {
       $timeout(function () {
         baguetteBox.run('.gallery');
       });
-    });
+    }]);
 });
 

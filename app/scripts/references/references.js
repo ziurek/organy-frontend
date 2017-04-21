@@ -3,7 +3,7 @@ define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.references', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('references', {
         url: '/references',
         views: {
@@ -14,11 +14,11 @@ define(['angular', 'baguetteBox'], function(angular, baguetteBox) {
         },
         data: { pageTitle: 'REFERENCES.TITLE' }
       });
-    })
-    .controller('ReferencesCtrl', function($timeout) {
+    }])
+    .controller('ReferencesCtrl', ['$timeout', function($timeout) {
       $timeout(function () {
         baguetteBox.run('.gallery');
       });
-    });
+    }]);
 });
 

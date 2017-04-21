@@ -26,7 +26,7 @@ define([
     'myApp.howWeBuild.intonation',
     'myApp.howWeBuild.montage'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider', function ($stateProvider) {
     $stateProvider.state('howWeBuild', {
       views: {
         "": {
@@ -35,6 +35,6 @@ define([
       },
       data: { pageTitle: 'HOW_WE_BUILD.TITLE' }
     });
-  });
+  }]);
 });
 

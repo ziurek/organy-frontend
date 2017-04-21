@@ -3,7 +3,7 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
   'use strict';
 
   return angular.module('myApp.realisationsNew', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('realisationsNew', {
         url: '/realisations/new',
         views: {
@@ -14,8 +14,9 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
         },
         data: { pageTitle: 'REALISATIONS.NEW_TITLE' }
       });
-    })
-    .controller('RealisationsNewCtrl', function($scope, newRealisations, $state, $timeout) {
+    }])
+    .controller('RealisationsNewCtrl',
+    ['$scope', 'newRealisations', '$state', '$timeout', function($scope, newRealisations, $state, $timeout) {
       $scope.realisations = newRealisations;
       var imageClicked = false;
 
@@ -33,6 +34,6 @@ define(['angular', 'jquery', 'lodash', 'baguetteBox'], function(angular, $, _, b
       $timeout(function () {
         baguetteBox.run('.gallery');
       });
-    });
+    }]);
 });
 

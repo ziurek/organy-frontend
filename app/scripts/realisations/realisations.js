@@ -4,7 +4,8 @@ define([
 ], function(angular) {
   'use strict';
 
-  return angular.module('myApp.realisations', []).config(function ($stateProvider) {
+  return angular.module('myApp.realisations', [])
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('realisations', {
         url: '/realisations',
         views: {
@@ -15,7 +16,7 @@ define([
         },
         data: { pageTitle: 'REALISATIONS.TITLE' }
       });
-    })
+    }])
     .controller('RealisationsCtrl', function() {
 
     });

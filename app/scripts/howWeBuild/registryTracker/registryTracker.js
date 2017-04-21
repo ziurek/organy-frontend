@@ -3,7 +3,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.howWeBuild.registryTracker', [])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider', function ($stateProvider) {
     $stateProvider.state('howWeBuild.registryTracker', {
       url: '/how-we-build/registry-tracker',
       views: {
@@ -14,7 +14,7 @@ define(['angular'], function(angular) {
       },
       data: { pageTitle: 'HOW_WE_BUILD.REGISTRY_TRACKER.TITLE' }
     });
-  })
+  }])
   .controller('HowWeBuildRegistryTrackerCtrl', function() {
 
   });

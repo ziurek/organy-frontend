@@ -16,7 +16,7 @@ define(['angular'], function(angular) {
   'use strict';
 
   return angular.module('myApp.contact', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('contact', {
         url: '/contact',
         views: {
@@ -27,7 +27,7 @@ define(['angular'], function(angular) {
         },
         data: { pageTitle: 'CONTACT.TITLE' }
       });
-    })
+    }])
     .controller('ContactCtrl', function() {
 
     });

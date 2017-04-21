@@ -134,10 +134,134 @@ define(['angular', 'angularTranslate'], function(angular) {
       });
 
       $translateProvider.translations('de', {
+        PAGE_TITLE: '',
+        INDEX: {
+          MAIN_PAGE: '',
+          ABOUT_COMPANY: '',
+          HOW_WE_BUILD: '',
+          L1: '',
+          L2: '',
+          L3: '',
+          L4: '',
+          L5: '',
+          L6: '',
+          L7: '',
+          L8: '',
+          L9: '',
+          L10: '',
+          REALISATIONS: '',
+          REFERENCES: '',
+          CONTACT: ''
+        },
         MAIN_PAGE: {
-          HELLO: 'srakke'
+          PAGE_TITLE: '',
+          HELLO: '',
+          P1: '',
+          P2: '',
+          ABOUT_COMPANY: '',
+          COMPANY_ACTIVITY: '',
+          L1: '',
+          L2: '',
+          L3: '',
+          L4: '',
+          L5: '',
+          L6: '',
+          L7: '',
+          LAST_REALISATIONS: ''
+        },
+        ABOUT_COMPANY: {
+          TITLE: '',
+          P1_TITLE: '',
+          P1_STRONG: '',
+          P1_CONTENT: '',
+          P2: '',
+          P3: '',
+          P4: '',
+          P5: '',
+          P6: '',
+          P7: '',
+          P8: '',
+          P9: '',
+          P10: ''
+        },
+        HOW_WE_BUILD: {
+          TITLE: '',
+          COVER: {
+            TITLE: '',
+            CONTENT: '',
+            CONTENT_STRONG: ''
+          },
+          COUNTER: {
+            TITLE: '',
+            P1: '',
+            L1: '',
+            L1_CONTENT: '',
+            L2: '',
+            L2_CONTENT: '',
+            L3: '',
+            L3_CONTENT: ''
+          },
+          GAME_TRACKER: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          REGISTRY_TRACKER: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          BARGE: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          BELLOWS: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          FANS: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          PIPES: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          INTONATION: {
+            TITLE: '',
+            CONTENT: ''
+          },
+          MONTAGE: {
+            TITLE: '',
+            CONTENT: ''
+          }
+        },
+        REALISATIONS: {
+          TITLE: '',
+          P1: '',
+          NEW: '',
+          NEW_TITLE: '',
+          RENOVATIONS: '',
+          IN_PROGRESS: '',
+          YEAR: '',
+          TRACKER: '',
+          VOICES: '',
+          MANUALS: '',
+          DETAILS: '',
+          REALISATIONS_IN_PROGRESS: '',
+          CREATOR: '',
+          BUILT_YEAR: '',
+          DETAILS_TITLE: '',
+          RENOVATIONS_TITLE: ''
+        },
+        REFERENCES: {
+          TITLE: '',
+          CONTENT: ''
+        },
+        CONTACT: {
+          TITLE: '',
+          CONTENT: ''
         }
       });
+
       $translateProvider.fallbackLanguage(['en', 'pl']);
       $translateProvider.preferredLanguage('pl');
     }]);

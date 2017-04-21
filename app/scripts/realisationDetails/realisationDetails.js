@@ -3,7 +3,7 @@ define(['angular', 'lodash', 'baguetteBox'], function(angular, _, baguetteBox) {
   'use strict';
 
   return angular.module('myApp.realisationDetails', [])
-    .config(function ($stateProvider) {
+    .config(['$stateProvider', function ($stateProvider) {
       $stateProvider.state('realisationDetails', {
         url: '/realisations/:state/:place',
         views: {
@@ -14,9 +14,10 @@ define(['angular', 'lodash', 'baguetteBox'], function(angular, _, baguetteBox) {
         },
         data: { pageTitle: 'REALISATIONS.DETAILS_TITLE' }
       });
-    })
-    .controller('RealisationDetailsCtrl', function($scope, $stateParams, newRealisations,
-                                                   renovationsRealisations, inProgressRealisations, $timeout) {
+    }])
+    .controller('RealisationDetailsCtrl', ['$scope', '$stateParams', 'newRealisations',
+    'renovationsRealisations', 'inProgressRealisations', '$timeout',
+    function($scope, $stateParams, newRealisations, renovationsRealisations, inProgressRealisations, $timeout) {
       var place = decodeURI($stateParams.place);
 
       $timeout(function () {
@@ -37,6 +38,6 @@ define(['angular', 'lodash', 'baguetteBox'], function(angular, _, baguetteBox) {
           throw new Error('State don\'t exist!');
           break;
       };
-    });
+    }]);
 });
 
