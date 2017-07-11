@@ -44,7 +44,7 @@ define(['angular', 'angularTranslate'], function(angular) {
           TITLE: 'O firmie',
           P1_TITLE: 'Twórczość organmistrzowska zakładu',
           P1_STRONG: 'Organmistrzostwo Zdzisław Mollin w Odrach k. Chojnic',
-          P1_CONTENT: 'sięga końca pięćdziesiątych lat ubiegłego stulecia. Zamiłowania do zawodu organmistrzowskiego wszczepił senior rodu Marcin Mollin (+ 1985), długoletni organista miejscowej parafii. Jego syn Józef naukę zawodu kształtował pod kierunkiem budowniczego organów Józefa Sobiechowskiego w Bydgoszczy, ukończoną zdaniem egzaminu czeladniczgo w 1953 roku oraz mistrzowskiego w 1961 roku. Pierwszym jego samodzielnym instrumentem były 11-rejestrowe organy o trakturze pneumatycznej, wybudowane w 1958 roku dla miejscowego kościoła parafialnego pw. Wniebowzięcia NMP w Odrach. Udoskonalane stopniowo doświadczenia warsztatowe, pogłębiane fachową literaturą, znalazły swe odzwierciedlenie w postaci takich instrumentów, jak organy: katedry Św. Trójcy w Chełmży, kościołach w Zblewie, Toruniu, Policach k. Szczecina, Tczewie, kościoła OO Franciszkanów w Łodzi-Łagiewnikach i Koszalinie, kościoła w Czarnej Wodzie i szeregu innych prac, m. in. dla Akademii i Szkół Muzycznych w Bydgoszczy, Gdańsku, Poznaniu, Warszawie, Łodzi i Montabaur (Niemcy).',
+          P1_CONTENT: 'sięga końca pięćdziesiątych lat ubiegłego stulecia. Zamiłowania do zawodu organmistrzowskiego wszczepił senior rodu Marcin Mollin (+ 1985), długoletni organista miejscowej parafii. Jego syn Józef (+2005) naukę zawodu kształtował pod kierunkiem budowniczego organów Józefa Sobiechowskiego w Bydgoszczy, ukończoną zdaniem egzaminu czeladniczgo w 1953 roku oraz mistrzowskiego w 1961 roku. Pierwszym jego samodzielnym instrumentem były 11-rejestrowe organy o trakturze pneumatycznej, wybudowane w 1958 roku dla miejscowego kościoła parafialnego pw. Wniebowzięcia NMP w Odrach. Udoskonalane stopniowo doświadczenia warsztatowe, pogłębiane fachową literaturą, znalazły swe odzwierciedlenie w postaci takich instrumentów, jak organy: katedry Św. Trójcy w Chełmży, kościołach w Zblewie, Toruniu, Policach k. Szczecina, Tczewie, kościoła OO Franciszkanów w Łodzi-Łagiewnikach i Koszalinie, kościoła w Czarnej Wodzie i szeregu innych prac, m. in. dla Akademii i Szkół Muzycznych w Bydgoszczy, Gdańsku, Poznaniu, Warszawie, Łodzi i Montabaur (Niemcy).',
           P2: 'Józef Mollin zachęcony przez mgr Mariana Dorawę z Torunia podjął się w 1968 roku przeprowadzenia pod jego kierunkiem konserwacji zabytkowych organów z 1774 roku w pobernardyńskim kościele Narodzenia NMP w Zamartem k. Chojnic. Była to pierwsza konserwacja organów zabytkowych w Polsce, przeprowadzona zgodnie z zasadami konserwatorskimi, której celem było uratowanie zniszczonego instrumentu przy równoczesnym zachowaniu jego wartości zabytkowych. Za nią nastąpiły kolejne realizacje konserwatorskie, wykonywane pod nadzorem konserwatorskim przy takich obiektach zabytkowych, jak: pozytywy w kaplicy zamku lidzbarskiego i kościoła w Przecznie, organy kościoła w Radzyniu Chełmińskim, pozytyw we Wlókach, boczne organy staromiejskiego kościoła św. Jana (obecnie katedry) w Toruniu, organy katedry we Włocławku, kościoła Św. Krzyża w Pruszczu Gdańskim, w Starej Farze w Białymstoku, pozytyw szkatulny i organy kościoła parafialnego w Tykocinie, rekonstrukcja organów kościoła Św. Gertrudy w Darłowie, itd.',
           P3: 'Jako jeden z pierwszych organmistrzów w Polsce podjął się budowy organów o trakturze mechanicznej (organy kościoła parafialnego w Jaktorowie k. Warszawy w 1979 roku).',
           P4: 'Poza budową organów wielkich od 1990 roku buduje również 4-rejestrowe pozytywy, przydatne dla niewielkich kościołów, kaplic, zespołów kameralnych i orkiestr znajdujące się w kraju i zagranicą (Włochy).',
@@ -134,135 +134,136 @@ define(['angular', 'angularTranslate'], function(angular) {
       });
 
       $translateProvider.translations('de', {
-        PAGE_TITLE: '',
-        INDEX: {
-          MAIN_PAGE: '',
-          ABOUT_COMPANY: '',
-          HOW_WE_BUILD: '',
-          L1: '',
-          L2: '',
-          L3: '',
-          L4: '',
-          L5: '',
-          L6: '',
-          L7: '',
-          L8: '',
-          L9: '',
-          L10: '',
-          REALISATIONS: '',
-          REFERENCES: '',
-          CONTACT: ''
+        PAGE_TITLE: 'Orgelbaumeister Zdzisław Mollin',
+        INDEX:{
+          MAIN_PAGE: 'Hauptseite',
+          ABOUT_COMPANY: 'Über uns',
+          HOW_WE_BUILD: 'Wie entstehen unsere Orgeln? ',
+          L1: 'Gehäuse',
+          L2: 'Spieltisch',
+          L3: 'Traktur ',
+          L4: 'Registertraktur',
+          L5: 'Windladen',
+          L6: ' Blasebälge ',
+          L7: 'Gebläse',
+          L8: 'Pfeifen',
+          L9: 'Intonation',
+          L10: 'Montage',
+          REALISATIONS: 'Unsere Arbeiten',
+          REFERENCES: 'Referenzen ',
+          CONTACT: 'Kontakt'
         },
-        MAIN_PAGE: {
-          PAGE_TITLE: '',
-          HELLO: '',
-          P1: '',
-          P2: '',
-          ABOUT_COMPANY: '',
-          COMPANY_ACTIVITY: '',
-          L1: '',
-          L2: '',
-          L3: '',
-          L4: '',
-          L5: '',
-          L6: '',
-          L7: '',
-          LAST_REALISATIONS: ''
+        MAIN_PAGE:{
+          PAGE_TITLE: 'Hauptseite',
+          HELLO: 'Herzlich Willkommen! ',
+          P1: 'Die Orgelbautätigkeit der Firma Organmistrzostwo Zdzisław Mollin in Odry bei  Chojnice reicht in die fünfziger Jahre des vergangenen Jahrhunderts zurück.  Die Liebe für den Orgelbau kam vom Familienoberhaupt Marcin Mollin (+ 1985), der viele Jahre lang Organist der hiesigen Pfarrgemeinde war. Sein Sohn, Józef (+2005), lernte das Fach unter der Aufsicht des Orgelbauers Józef Sobiechowski in Bydgoszcz kennen. 1953 erhielt er sein Gesellendiplom und 1961 seinen Meistertitel.',
+          P2: 'Das erste, selbständig erbaute Instrument war eine Orgel mit 11 Registern und pneumatischer Traktur, die 1958 für die lokale Pfarrkirche Maria Himmelfahrt entstand. ',
+          ABOUT_COMPANY: 'Weitere Informationen zu unserer Firma …',
+          COMPANY_ACTIVITY: 'Tätigkeitsgebiete unserer Firma: ',
+          L1: 'Orgelbau und Orgelrekonstruktion ',
+          L2: 'Orgelpositive ',
+          L3: 'Renovierung und Pflege aller Systeme ',
+          L4: 'Herstellung von Zinn- und Holzpfeifen ',
+          L5: 'Stimmen ',
+          L6: 'Herstellung von Zungenpfeifen ',
+          L7: 'Elemente mechanischer Spiel-Traktur ',
+          LAST_REALISATIONS: 'Letzte Ausführungen:'
         },
-        ABOUT_COMPANY: {
-          TITLE: '',
-          P1_TITLE: '',
-          P1_STRONG: '',
-          P1_CONTENT: '',
-          P2: '',
-          P3: '',
-          P4: '',
-          P5: '',
-          P6: '',
-          P7: '',
-          P8: '',
-          P9: '',
-          P10: ''
+        ABOUT_COMPANY:{
+          TITLE: 'Über uns',
+          P1_TITLE: 'Die Orgelbautätigkeit der Firma ',
+          P1_STRONG: 'Organmistrzostwo Zdzisław Mollin in Odry bei  Chojnice ',
+          P1_CONTENT: 'reicht in die fünfziger Jahre des vergangenen Jahrhunderts zurück.  Die Liebe für den Orgelbau kam vom Familienoberhaupt Marcin Mollin (+ 1985), der viele Jahre lang Organist der hiesigen Pfarrgemeinde war. Sein Sohn, Józef, lernte das Fach unter der Aufsicht des Orgelbauers Józef Sobiechowski in Bydgoszcz kennen. 1953 erhielt er sein Gesellendiplom und 1961 seinen Meistertitel. Das erste, selbständig erbaute Instrument war eine Orgel mit 11 Registern und pneumatischer Traktur, die 1958 für die lokale Pfarrkirche Himmelfahrtskirche in Odry entstand. Die Handwerkserfahrung, die im Laufe der Zeit verbessert wurde sowie das Studium der Fachliteratur haben ihre Widerspiegelung in der Form folgender Instrumente gefunden: Orgel im Dom der Heiligen Dreifaltigkeit  in Chełmża sowie die Orgeln in den Kirchen in Zblewo, Torun, Police bei  Szczecin, Tczew, Franziskanerkirche in Łódź-Łagiewniki, Koszalin sowie in Czarna Woda. Darüber hinaus wurden viele andere Aufträge fertiggestellt, u.a. für die Akademie und die Musikschulen in Bydgoszcz, Gdansk, Poznań, Warszawa, Łódź und Montabaur (Deutschland).',
+          P2: '1968 wurde Józef Mollin von Marian Dorawa aus Torun ermutigt, unter seiner Leitung, die historische Orgel von 1774 in der ehemaligen Bernhardiner-Kirche in Zamarte bei  Chojnice zu restaurieren. Es war die erste Restaurierung einer historischen Orgel in Polen, die gemäß Restaurierungsregeln durchgeführt wurde und das beschädigte Instrument retten und gleichzeitig seine historischen Werte bewahren sollte. Danach folgten weitere Restaurierungsaufträge, die unter denkmalpflegerischer Aufsicht durchgeführt wurden. Es handelte sich um Restaurierungen folgender Objekte: die Positive in der Kapelle des Schlosses in Lidzbark Warmiński und in der Kirche in Przeczno, die Orgel in der Kirche in Radzyń Chełmiński, das Positiv in Wólki, die Seitenorgel der altstädtischen  Johanneskirche in Torun (heute Dom), die Orgel im Dom von Włocławek,  die Orgel in der Kreuzkirche in Pruszcz Gdański, die Orgel in der Alten Pfarrkirche in Białystok, das Kastenpositiv in der Pfarrkirche in Tykocin, die Rekonstruktion der Orgel in der  Gertrudenkirche in Darłowo usw. ',
+          P3: 'Józef Mollin war einer der ersten Orgelbauer in Polen, der den Auftrag für den Bau einer Orgel mit der mechanischen Traktur übernahm (die Orgel in der Pfarrkirche Jaktorów bei Warszawa, 1979). ',
+          P4: 'Neben dem Bau großer Orgel baut Józef Mollin seit 1990 auch Positive mit vier Registern, die vor allem für kleinere Kirchen, Kapellen, Kammerensembles und Orchester im In- und Ausland (Italien) bestimmt sind.',
+          P5: '1983 wurde Józef Mollin für sein Gesamtwerk vom Minister für Kultur und Kunst mit dem Titel „Meister des Kunsthandwerks“ ausgezeichnet. ',
+          P6: 'Seit 1980 wurde er von seinem Sohn Zdzisław Mollin, gelernter Elektroniker, in seiner Berufstätigkeit begleitet. Zdzisław Mollin führt das Werk seines Vaters mit Erfolg fort.  1985 erhielt er sein Gesellendiplom und 1991 seinen Meistertitel. Er bildete sich als Orgelbauer in den deutschen Firmen Heuss und Kreienbrink weiter.',
+          P7: 'Das gemeinsame Werk von Józef und Zdzisław Mollin sind die Orgel in der Marienkirche in Gdańsk-Przymorze, die Orgel in Stanislauskirche in  Gdańsk-Wrzeszcz sowie die, in den letzten Jahren durchgeführte Rekonstruktion der durch viele Umbaumaßnahmen zerstörten Orgel in der Hl. Jacek- Schlosskirche  in Słupsk.  Die Ausführung der Aufträge aus dem Orgelbaubereich ermöglicht eine Werkstatt, die mit modernsten Fachgeräten ausgestattet ist, eine Montagehalle sowie eine Lagerhalle für Laub- und Nadelholz. ',
+          P8: 'Die Rekonstruktion des barocken Instruments der Seitenorgel in der Dombasilika in Pelplin, die 2003 durchgeführt wurde, ist die Bekrönung  der gesamten Orgelbauertätigkeit von Józef und Zdzisław Mollin.',
+          P9: 'Nach dem Zdzisław Mollin die Firma übernahm, hat er selbstständig viele neue Instrumente erbaut und viele historische Orgel in ganz Polen restauriert. 2007 wurde Zdzisław Mollin für die 50-jährige Firmentätigkeit vom Bischof von Pelplin, Jan Bernard Szlaga, mit der Medaille  ',
+          P10: 'für die Verdienste für die Diözese Pelplin ausgezeichnet.'
         },
-        HOW_WE_BUILD: {
-          TITLE: '',
-          COVER: {
-            TITLE: '',
-            CONTENT: '',
-            CONTENT_STRONG: ''
+        HOW_WE_BUILD:{
+          TITLE: 'Wie entstehen unsere Orgeln?',
+          COVER:{
+            TITLE: 'Gehäuse',
+            CONTENT: 'Die architektonischen Projekte entwickeln wir selbständig oder in Zusammenarbeit mit Innenarchitekten.  Jeder Entwurf ist einzigartig und an die Architektur des jeweiligen Innenraums angepasst.  Das Gehäuse wird aus Eichenholz, Eschenholz usw. hergestellt. Die  Füllungen sind furniert oder aus Massivholz hergestellt. ',
+            CONTENT_STRONG: 'Die gesamte Orgel befindet sich in einem Gehäuse (Dach, Wände).   '
           },
-          COUNTER: {
-            TITLE: '',
-            P1: '',
-            L1: '',
-            L1_CONTENT: '',
-            L2: '',
-            L2_CONTENT: '',
-            L3: '',
-            L3_CONTENT: ''
+          COUNTER:{
+            TITLE: 'Spieltisch ',
+            P1: 'In die Orgel eingebaut oder freistehend. Aus zwei Massivholzarten hergestellt oder furniert. ',
+            L1: 'Klaviaturen ',
+            L1_CONTENT: 'Aus Kiefernholz (zweiarmiger oder einarmiger Hebel) mit Verkleidungen aus exotischem Holz.   Die Klaviaturen mit Fußpedal sind aus Eichenholz, parallel-konkav.',
+            L2: 'Manubrien ',
+            L2_CONTENT: 'Aus exotischem Holz mit Registernummerierung.  Die Schilder sind im Metall oder im Holz graviert. ',
+            L3: 'Koppeln',
+            L3_CONTENT: 'Hergestellt aus Hainbuchenholz in Form von Wippen in Filzlagern.  Wellen aus Eichenholz mit Hainbuchenholzarmen in Filzklötzen. Es können ein Setzer (elektronischer Speicher) der Firma Heuss sowie das elektronische Koppelsystem (Koppeln) der Firma Heuss montiert werden.'
           },
-          GAME_TRACKER: {
-            TITLE: '',
-            CONTENT: ''
+          GAME_TRACKER:{
+            TITLE: 'Mechanische Spieltraktur ',
+            CONTENT: 'Die mechanische Spieltraktur wird seit 1979 in unserer Firma gebaut. Im Laufe der Jahre wurde sind dank der Zusammenarbeit mit den deutschen Firmen Heuss und Laukhuff ständig verbessert. Abstrakten aus Kiefernholz – Holzleisten.  Wellen aus Eichenholz mit Hainbuchenholzarmen in Filzklötzen oder aus Alurohren mit Hainbuchenholzarmen.  Die Wellen sind auf einer Tischlerplatte aus Eichenholz montiert.  Winkel und Holzwippen aus Hainbuchenholz in Filzklötzen. '
           },
-          REGISTRY_TRACKER: {
-            TITLE: '',
-            CONTENT: ''
+          REGISTRY_TRACKER:{
+            TITLE: 'Mechanische oder elektrische Registertraktur ',
+            CONTENT: 'Ausgeführt in der Form von Wellen, Metallwippen und Eichenholzstangen. Erhältlich auch elektrische Traktur mit Riegelmagneten.'
           },
-          BARGE: {
-            TITLE: '',
-            CONTENT: ''
+          BARGE:{
+            TITLE: 'Windladen ',
+            CONTENT: 'Schleifladen aus Eichenholz.  Auf dem Boden der Windlade, im Windkasten, wird ein Keilbalg mit Ventil montiert.  Tonventile aus Fichtenholz, mit Filzschicht und enthäutet.   Die Größe der Eingangsöffnung ist von der Stimmenanzahl der Windlade abhängig. Das Glied des Tonventils geht durch den Boden der Windlade in der Form der Lederpulpete durch.  Die Registerschleifen sind aus Eichenholz oder Bakelit hergestellt.  Die Klötze und Pfeifenbänke bestehen aus Eichenholz. Die Abdichtungen zwischen dem Klotz und der Schleife werden aus Schaumstoff in Kreisform ausgeführt.'
           },
-          BELLOWS: {
-            TITLE: '',
-            CONTENT: ''
+          BELLOWS:{
+            TITLE: 'Blasebälge',
+            CONTENT: 'Stellen wir als Schwimmerbälge oder Keilbälge (3-4 Bälge) aus Kifernholz und Leder her. Für die Bälge wird ein Luftregler montiert.'
           },
-          FANS: {
-            TITLE: '',
-            CONTENT: ''
+          FANS:{
+            TITLE: 'Gebläse ',
+            CONTENT: 'Bestellen wir bei ausländischen Firmen.'
           },
-          PIPES: {
-            TITLE: '',
-            CONTENT: ''
+          PIPES:{
+            TITLE: 'Pfeifen',
+            CONTENT: 'Alle Metall- und Holzpfeifen, Labial- und Zungenpfeifen werden selbständig von uns hergestellt. Labialpfeifen aus Zinnlegierung werden seit den siebziger Jahren des 20. Jh. und die Zungenpfeifen seit einigen Jahren entweder selbständig von uns hergestellt oder bei ausländischen Firmen bestellt. Metallene Labial- und Zungenpfeifen sind aus Zinn- und Bleilegierungen mit unterschiedlichen Zinnanteil (z.B. 25%, 50%, 70% und 80%) hergestellt.  Das Blech für die Pfeifen wird gegossen, geschnitten und poliert und kann auch gehämmert werden. Die Prospektpfeifen werden aus hochprozentigen Zinnlegierungen hergestellt. Die Holzpfeifen werden aus trockenen Kiefern- oder Eichenholz gebaut. '
           },
-          INTONATION: {
-            TITLE: '',
-            CONTENT: ''
+          INTONATION:{
+            TITLE: 'Intonation',
+            CONTENT: 'Die erste Intonation wird in der Werkstatt mit einer Testwindlade durchgeführt.  Der Luftdruck beträgt ca. 60-80 mm Wassersäule. Das Stimmen erfolgt in unterschiedlichen Temperaturen. '
           },
-          MONTAGE: {
-            TITLE: '',
-            CONTENT: ''
+          MONTAGE:{
+            TITLE: 'Montage',
+            CONTENT: 'Die vor Montage erfolgt in der firmeneigenen Montagehalle (Höhe 8 m).  Das Instrument wird vollständig mit Pfeifen und Trakturen montiert. Auf diese Weise werden vor der Montage beim Kunden alle Teile sowie ihre  ordnungsgemäße Funktion überprüft. Danach wird das Instrument zerlegt, verpackt und an den Bestimmungsort transportiert. Auf diese Weise wird die Dauer der endgültigen Montage wesentlich verkürzt.'
           }
         },
-        REALISATIONS: {
-          TITLE: '',
-          P1: '',
-          NEW: '',
-          NEW_TITLE: '',
-          RENOVATIONS: '',
-          IN_PROGRESS: '',
-          YEAR: '',
-          TRACKER: '',
-          VOICES: '',
-          MANUALS: '',
-          DETAILS: '',
-          REALISATIONS_IN_PROGRESS: '',
-          CREATOR: '',
-          BUILT_YEAR: '',
-          DETAILS_TITLE: '',
-          RENOVATIONS_TITLE: ''
+        REALISATIONS:{
+          TITLE: 'Unsere Arbeiten',
+          P1: 'Um die Durchsicht unserer Arbeiten zu vereinfachen, haben wir unsere Orgeln auf folgende Art und Weise unterteilt: ',
+          NEW: 'Neue Instrumente ',
+          NEW_TITLE: 'Neue Orgeln ',
+          RENOVATIONS: 'Restaurierungen ',
+          IN_PROGRESS: 'Laufende Projekte',
+          YEAR: 'Baujahr:',
+          TRACKER: 'Traktur: ',
+          VOICES: 'Anzahl der Stimmen: ',
+          MANUALS: 'Manuale: ',
+          DETAILS: 'Detaillierte Informationen ',
+          REALISATIONS_IN_PROGRESS: 'Laufende Projekte ',
+          CREATOR: 'Meister:',
+          BUILT_YEAR: 'Baujahr: ',
+          DETAILS_TITLE: 'Projekt ',
+          RENOVATIONS_TITLE: 'Restaurierungsprojekt '
         },
-        REFERENCES: {
-          TITLE: '',
-          CONTENT: ''
+        REFERENCES:{
+          TITLE: 'Referenzen',
+          CONTENT: 'Auf den von der Firma  Mollin gebauten Instrumenten wurden folgende CDs aufgenommen:'
         },
-        CONTACT: {
-          TITLE: '',
-          CONTENT: ''
+        CONTACT:{
+          TITLE: 'Kontakt',
+          CONTENT: 'Wenn Sie unser Angebot und unsere ausgeführten Projekte interessant finden, dann nehmen Sie bitte Kontakt mit uns auf: '
         }
       });
 
-      $translateProvider.fallbackLanguage(['en', 'pl']);
-      $translateProvider.preferredLanguage('pl');
+      $translateProvider.fallbackLanguage(['pl', 'de', 'en']);
+      var prefferedLanguage = sessionStorage.lang ? sessionStorage.lang : 'pl';
+      $translateProvider.preferredLanguage(prefferedLanguage);
     }]);
 });

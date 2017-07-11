@@ -5,6 +5,61 @@ define(['angular'], function(angular) {
   return angular.module('myApp.newRealisations', [])
   .constant('newRealisations', [
     {
+      place: 'Wolin p.w. św. Mikołaja Bp',
+      smallerTitle: 'Seifert 1960',
+      year: 2016,
+      tracker: 'elektryczna (Setzer)',
+      size: '40 (Seifert 32/III+P)',
+      manual: 'IV+P',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/wolin_2016/prospekt.jpg',
+          img: '/images/realisations/wolin_2016/prospekt.jpg'
+        },
+        {
+          thumb: '/images/realisations/thumbs/wolin_2016/kontuar.jpg',
+          img: '/images/realisations/wolin_2016/kontuar.jpg'
+        }
+      ],
+      hasDetails: true
+    },
+    {
+      place: 'Gdańsk, Polska Filharmonia Bałtycka',
+      year: 2015,
+      tracker: 'mechaniczna',
+      size: '3 (bas/disk.)',
+      manual: 'pozytyw',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/gdansk_2015/kontuar1.jpg',
+          img: '/images/realisations/gdansk_2015/kontuar1.jpg'
+        },
+        {
+          thumb: '/images/realisations/thumbs/gdansk_2015/kontuar2.jpg',
+          img: '/images/realisations/gdansk_2015/kontuar2.jpg'
+        }
+      ],
+      hasDetails: true
+    },
+    {
+      place: 'Olsztyn, Filharmonia Warmińsko- Mazurska',
+      year: 2015,
+      tracker: 'mechaniczna',
+      size: '3 (bas/disk.)',
+      manual: 'pozytyw',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/olsztyn_2015/prospekt.jpg',
+          img: '/images/realisations/olsztyn_2015/prospekt.jpg'
+        },
+        {
+          thumb: '/images/realisations/thumbs/olsztyn_2015/kontuar.jpg',
+          img: '/images/realisations/olsztyn_2015/kontuar.jpg'
+        }
+      ],
+      hasDetails: true
+    },
+    {
       place: 'Chojnice, kościół Zwiastowania NMP',
       description:  'Projekt dyspozycji: prof. Julian Gembalski\n' +
                     'Projekt techniczny, rysunki: Zdzisław Mollin\n' +
@@ -967,6 +1022,34 @@ define(['angular'], function(angular) {
   ])
   .constant('renovationsRealisations', [
     {
+      place: 'Śliwice, pw.św.Katarzyny Aleksandryjskiej',
+      year: 2016,
+      creator: 'A. Polzin, Posen, 1904, Opus 18',
+      tracker: 'pneumatyczna / elektryczna',
+      size: '24',
+      manual: 'II+P',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/sliwice_2016/sliwiceProspekt.jpg',
+          img: '/images/realisations/sliwice_2016/sliwiceProspekt.jpg'
+        }
+      ]
+    },
+    {
+      place: 'PERLE / Luxemburg - kościół',
+      year: 2016,
+      creator: 'Oberlinger - 1978 r.',
+      tracker: 'elektryczna / mechaniczna',
+      size: '29',
+      manual: 'II+P',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/luxemburg_2016/1.jpg',
+          img: '/images/realisations/luxemburg_2016/1.jpg'
+        }
+      ]
+    },
+    {
       place: 'Szczecinek, pw.Narodzenia NMP',
       year: 2014,
       creator: "P.B. Voelkner, Bromberg, 1908",
@@ -1309,42 +1392,30 @@ define(['angular'], function(angular) {
   ])
   .constant('inProgressRealisations', [
     {
-      place: 'Sopot, kościół Zesłania Ducha Świętego',
+      place: 'Gdańsk Morena, pw. Bożego Ciała',
       smallerTitle: "Nowe organy",
-      year: 2016,
+      year: 2017,
       tracker: 'elektryczna / mechaniczna',
-      size: '28',
-      manual: 'III+P',
-      images: [
-        {
-          thumb: '/images/realisations/thumbs/sopot_2016/1.jpg',
-          img: '/images/realisations/sopot_2016/1.jpg'
-        }
-      ]
+      size: '66',
+      manual: 'IV+P',
     },
     {
-      place: 'PERLE / Luxemburg - kościół',
+      place: 'Smardzko k. Świdwina, pw.Matki Boskiej Ostrobramskiej',
       smallerTitle: "Renowacja",
-      year: 2016,
-      creator: 'Oberlinger - 1978 r.',
-      tracker: 'elektryczna / mechaniczna',
-      size: '29',
-      manual: 'II+P',
-      images: [
-        {
-          thumb: '/images/realisations/thumbs/luxemburg_2016/1.jpg',
-          img: '/images/realisations/luxemburg_2016/1.jpg'
-        }
-      ]
+      year: 2017,
+      tracker: 'mechaniczna',
+      size: '5',
+      manual: 'I+P (podwieszony)',
+      creator: 'B. Grüneberg, Szczecin, 1860 r., Opus 33',
     },
     {
-      place: 'Śliwice, pw.św.Katarzyny Aleksandryjskiej',
+      place: 'Stara Łubianka, pw. Podwyższenia Krzyża Świętego',
       smallerTitle: "Renowacja",
-      year: 2016,
-      creator: 'A. Polzin, Posen, 1904, Opus 18',
+      year: 2017,
       tracker: 'pneumatyczna',
-      size: '24',
-      manual: 'II+P'
+      size: '10',
+      manual: 'II+P',
+      creator: 'C.F. Voelkner, Duninowo, Opus 166',
     }
   ]);
 });

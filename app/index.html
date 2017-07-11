@@ -9,7 +9,8 @@
     {{::'PAGE_TITLE' | translate}}
   </title>
   <meta name="description" content="">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!--<script data-main="scripts/amd/config" src="scripts/amd/require.js"></script>-->
 
   <script src="scripts/amd/require.js"></script>
@@ -30,9 +31,9 @@
     <div class="container">
       <div class="banner-top">
         <div class="flags">
-          <button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'en'}" ng-click="changeLanguage('en')">
-            <span class="flag-icon flag-icon-gb"></span>
-          </button>
+          <!--<button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'en'}" ng-click="changeLanguage('en')">-->
+            <!--<span class="flag-icon flag-icon-gb"></span>-->
+          <!--</button>-->
           <button type="button" class="btn btn-transparent" ng-class="{active: getLanguage() === 'de'}" ng-click="changeLanguage('de')">
             <span class="flag-icon flag-icon-de"></span>
           </button>
@@ -55,29 +56,27 @@
                 <span class="icon-bar"></span>
               </button>
             </div>
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed">
-              <li ng-class="{ active: isActive('/main-page') }" ng-cloak><a ui-sref="mainPage">{{::'INDEX.MAIN_PAGE' | translate}}</a></li>
-              <li ng-class="{ active: isActive('/about-company') }" ng-cloak><a ui-sref="aboutCompany">{{::'INDEX.ABOUT_COMPANY' | translate}}</a></li>
-              <li uib-dropdown ng-cloak>
-                <a href="#" uib-dropdown-toggle ng-click="dropdownToggle()">
-                  {{::'INDEX.HOW_WE_BUILD' | translate}}
-                  <ul class="dropdown-menu dropdown-menu-left" uib-dropdown-menu role="menu">
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/cover') }"><a ui-sref="howWeBuild.cover">{{::'INDEX.L1' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/counter') }"><a ui-sref="howWeBuild.counter">{{::'INDEX.L2' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/game-tracker') }"><a ui-sref="howWeBuild.gameTracker">{{::'INDEX.L3' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/registry-tracker') }"><a ui-sref="howWeBuild.registryTracker">{{::'INDEX.L4' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/barge') }"><a ui-sref="howWeBuild.barge">{{::'INDEX.L5' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/bellows') }"><a ui-sref="howWeBuild.bellows">{{::'INDEX.L6' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/fans') }"><a ui-sref="howWeBuild.fans">{{::'INDEX.L7' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/pipes') }"><a ui-sref="howWeBuild.pipes">{{::'INDEX.L8' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/intonation') }"><a ui-sref="howWeBuild.intonation">{{::'INDEX.L9' | translate}}</a></li>
-                    <li role="menuitem" ng-class="{ active: isActive('/how-we-build/montage') }"><a ui-sref="howWeBuild.montage">{{::'INDEX.L10' | translate}}</a></li>
-                  </ul>
-                </a>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" uib-collapse="navCollapsed" >
+              <li ng-class="{ active: isActive('/main-page') }" ng-cloak><a ui-sref="mainPage">{{'INDEX.MAIN_PAGE' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/about-company') }" ng-cloak><a ui-sref="aboutCompany">{{'INDEX.ABOUT_COMPANY' | translate}}</a></li>
+              <li class="dropdown-container" uib-dropdown ng-cloak>
+                <a href="#" uib-dropdown-toggle>{{'INDEX.HOW_WE_BUILD' | translate}}</a>
+                <ul class="dropdown-menu dropdown-menu-left" uib-dropdown-menu role="menu">
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/cover') }"><a ui-sref="howWeBuild.cover">{{'INDEX.L1' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/counter') }"><a ui-sref="howWeBuild.counter">{{'INDEX.L2' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/game-tracker') }"><a ui-sref="howWeBuild.gameTracker">{{'INDEX.L3' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/registry-tracker') }"><a ui-sref="howWeBuild.registryTracker">{{'INDEX.L4' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/barge') }"><a ui-sref="howWeBuild.barge">{{'INDEX.L5' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/bellows') }"><a ui-sref="howWeBuild.bellows">{{'INDEX.L6' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/fans') }"><a ui-sref="howWeBuild.fans">{{'INDEX.L7' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/pipes') }"><a ui-sref="howWeBuild.pipes">{{'INDEX.L8' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/intonation') }"><a ui-sref="howWeBuild.intonation">{{'INDEX.L9' | translate}}</a></li>
+                  <li role="menuitem" ng-class="{ active: isActive('/how-we-build/montage') }"><a ui-sref="howWeBuild.montage">{{'INDEX.L10' | translate}}</a></li>
+                </ul>
               </li>
-              <li ng-class="{ active: isActive('/realisations') }" ng-cloak><a ui-sref="realisations">{{::'INDEX.REALISATIONS' | translate}}</a></li>
-              <li ng-class="{ active: isActive('/references') }" ng-cloak><a ui-sref="references">{{::'INDEX.REFERENCES' | translate}}</a></li>
-              <li ng-class="{ active: isActive('/contact') }" ng-cloak><a ui-sref="contact">{{::'INDEX.CONTACT' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/realisations') }" ng-cloak><a ui-sref="realisations">{{'INDEX.REALISATIONS' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/references') }" ng-cloak><a ui-sref="references">{{'INDEX.REFERENCES' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/contact') }" ng-cloak><a ui-sref="contact">{{'INDEX.CONTACT' | translate}}</a></li>
             </ul>
           </div>
         </div>

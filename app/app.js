@@ -70,9 +70,9 @@ define([
       state: 'new'
     },
     {
-      image: '../images/realisations/luxemburg_2016/1.jpg',
-      title: 'PERLE / Luxemburg - kościół',
-      state: 'in-progress'
+      image: '../images/realisations/wolin_2016/prospekt.jpg',
+      title: 'Wolin p.w. św. Mikołaja Bp',
+      state: 'new'
     },
     {
       image: '../images/realisations/szczecinek_2014/prospekt.jpg',
@@ -84,17 +84,13 @@ define([
   function($scope, $location, Banners, $translate, $state)
   {
     $('#hide-before-load').css('display', 'inline');
-    $scope.isOpen = false;
 
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
     };
 
-    $scope.dropdownToggle = function() {
-      $scope.isOpen = !$scope.isOpen;
-    };
-
     $scope.changeLanguage = function (key) {
+      sessionStorage.lang = key;
       $translate.use(key);
       $state.reload();
     };
@@ -106,4 +102,3 @@ define([
     $scope.Banners = Banners;
   }]);
 });
-
