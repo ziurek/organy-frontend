@@ -262,7 +262,137 @@ define(['angular', 'angularTranslate'], function(angular) {
         }
       });
 
-      $translateProvider.fallbackLanguage(['pl', 'de', 'en']);
+      $translateProvider.translations('en', {
+      PAGE_TITLE: 'Pipe Organ Craftsmanship Zdzisław Mollin',
+        INDEX:{
+        MAIN_PAGE: 'Main page',
+          ABOUT_COMPANY: 'About company',
+          HOW_WE_BUILD: 'How we build',
+          L1: 'Organ case',
+          L2: 'Organ console',
+          L3: 'Key action system',
+          L4: 'Tracker action system',
+          L5: 'Wind chests',
+          L6: 'Bellows',
+          L7: 'Wind chests',
+          L8: 'Pipes',
+          L9: 'Tuning',
+          L10: 'Installation',
+          REALISATIONS: 'Realisations',
+          REFERENCES: 'References',
+          CONTACT: 'Contact'
+      },
+      MAIN_PAGE:{
+        PAGE_TITLE: 'Main page',
+          HELLO: 'Welcome',
+          P1: 'Zdzisław Mollin Pipe Organ Craftsmanship in Odry, a village north-east of Chojnice, started in the late fifties of the past century. The passion for organ pipe craftsmanship was imbued in Zdzisław Mollin by the patriarch of the Mollin family, i.e., Marcin Mollin (+ 1985), an organist of a local parish for many years. His son Józef was learning pipe organ craftsmanship from an organ builder Józef Sobiechowski in Bydgoszcz. As a result, Józef Mollin qualified as a journeyman by examination in 1953 and he passed master craftsman’s exam in 1961. ',
+          P2: 'The first instrument made by Józef was 11-stop pneumatic organ built in 1958 for the local parish church dedicated to the Blessed Virgin Mary in Odry.',
+          ABOUT_COMPANY: 'More about the Mollin Company ...',
+          COMPANY_ACTIVITY: 'A range of our works comprises:',
+          L1: 'Building and reconstructing of organs',
+          L2: 'Organ positives',
+          L3: 'Repairs and restoration of all the systems',
+          L4: 'Crafting tin pipes and wooden pipes',
+          L5: 'Tuning',
+          L6: 'Production of reed tongue pipes',
+          L7: 'Elements of mechanical action systems',
+          LAST_REALISATIONS: 'Recent realisation:'
+      },
+      ABOUT_COMPANY:{
+        TITLE: 'About Mollin company',
+          P1_TITLE: 'Work of pipe organ craftsmanship by Mollin company',
+          P1_STRONG: 'Zdzisław Mollin Pipe Organ Craftsmanship in Odry, a village north-east of Chojnice, ',
+          P1_CONTENT: 'started in the late fifties of the past century. The passion for organ pipe craftsmanship was imbued in Zdzisław Mollin by the patriarch of the Mollin family, i.e., Marcin Mollin (+ 1985), an organist of a local parish for many years. His son Józef was learning pipe organ craftsmanship from an organ builder Józef Sobiechowski in Bydgoszcz. As a result, Józef Mollin qualified as a journeyman by examination in 1953 and he passed master craftsman’s exam in 1961. The first instrument Józef crafted on his own was 11-stop pneumatic organ built in 1958 for the local parish church dedicated to the Blessed Virgin Mary in Odry. Gradually perfected crafts, advanced with the use of professional literature, were reflected in crafting of such instruments as organ in the Cathedral of the Holy Trinity in Chełmża, churches in Zblew, Toruń, Police (one of the biggest towns of Szczecin agglomeration), Tczew, the Franciscan church in Łódź-Łagiewniki and Koszalin, the church in Czarna Woda and many other works, for the Academy of Music and Music Schools in Bydgoszcz, Gdańsk, Poznań, Warszawa, Łódź and Montabaur (Germany).',
+          P2: 'Józef Mollin, encouraged by Marian Dorawa, MA from Toruń, in 1968 took a decision to renovate,  under Dorawa’s direction, antique pipe organ from 1774 in the Post-Observartine Church of the Nativity of the Blessed Virgin Mary in Zamarte next to Chojnice. It was the first restoration of the antique pipe organ in Poland. It was carried out in accordance with the rules of restoration. The aim of the conservation was to save the damaged instrument with the view to maintain its antique value. The afore-mentioned conservation was followed by the other conservative realisations performed under the conservator’s supervision close to such national heritage sites as: the positives in the chapel of the Castle of Warmian Bishops in Lidzbark Warmiński and the church in Przeczno, the pipe organs in the church in Radzyń Chełmiński, the positive in Wlóki, cross-section organ in the old town Church of St. John (at present the Cathedral of Toruń Diocese), the pipe organ of the Cathedral in Włocławek, the pipe organ in the Church of the Holy Cross in Pruszcz Gdański, in the Old Parish Church in Białystok, the regal and the pipe organ in the parish church in Tykocin, conservation of the pipe organ in the Church of St. Gertrude in Darłowo, etc.',
+          P3: 'As one of the first pipe organ craftsmen in Poland, in 1979 Józef Mollin took a decision to build the pipe organ with mechanical action system (the pipe organ in the parish church in Jaktorów close to Warsaw.',
+          P4: 'Apart from making the great organs, since 1990 Józef Molin has built also the 4-stop positives, used in small churches, chapels, small bands and orchestras both in Poland and abroad (Italy).',
+          P5: 'For his lifetime achievement, Józef Mollin was honoured in 1983 with the title Master of Artisanal Handicraft by the Minister of Culture and National Heritage.',
+          P6: 'Since 1980 Józef Mollin in his artistic work has been supported by his son Zdzisław Mollin, an electronic by profession, who continues artistic work of his father with the same success. Honoured in 1985 with a journeyman trade certificate and in 1991 with master craftsman certificate he was enhancing his qualifications in Germna companies (Heuss and Kreienbrink).',
+          P7: 'The shared masterpiece of Józef and Zdzisław Mollins are the new pipe organ in the Church of the Blessed Virgin Mary the Queen of the Holy Rosary in Gdańsk Przymorze and the church of St. Stanislav the Bishop in Gdańsk Wrzeszcz and the reconstruction of the pipe organ, damaged by many alterations, in the castle church of St. Jack in Słupsk carried out in the recent years. The realisation of the afore-mentioned works is facilitated thanks to an extended workshop, which is equipped with the cutting-edge, specialised tools as well as an assembly hall and a yard for the season hardwood and conifer wood.',
+          P8: 'The reconstruction of cross-section organ in the Cathedral Basilica of the Assumption in Pelplin in 2003 was the crown of a few dozen years of Józef and Zdzisław Mollin’s organ craftsmanship activity.',
+          P9: 'Zdzisław Mollin, running his company independently, has crafted many new instruments and has restored a lot of antique organs in different Polish cities. In 2007, for the entire 50 years of running his company, Zdzisław Mollin was honoured with the order of ',
+          P10: 'merit for the Pelplin Diocese by the Bishop of Pelplin.'
+      },
+      HOW_WE_BUILD:{
+        TITLE: 'How we build',
+          COVER:{
+          TITLE: 'Organ case',
+            CONTENT: 'We make the architectural projects on our own or collaborating with interior designers. Each project is customised and adjusted to architectural style of a given interior. Cases are made from oak and ash trees. We use veneered panels or solid wood.',
+            CONTENT_STRONG: 'The whole organ case is contained in an organ chamber (roof, walls).'
+        },
+        COUNTER:{
+          TITLE: 'Console – key desk',
+            P1: 'It is built in an organ case as an organ key rack or it can be detached. It is made from different kinds of solid wood or it is veneered.',
+            L1: 'Keyboards',
+            L1_CONTENT: 'They are made from pine tree wood (single or double lever) with facings made from exotic wood. Pedal keyboards are made from oak tree wood with the parallel, concave layout of keys.',
+            L2: 'Manubria',
+            L2_CONTENT: 'Manubria are turned from exotic wood with numbers of trackers. Plates are engraved in metal or wood.',
+            L3: 'Manual couplers',
+            L3_CONTENT: 'They are made from hornbeam wood in the form of control arms and they are fixed in felt bearings. Metal torsion rollers with hornbeam arms are fixed in felted boards. It is possible to install Setzer (electronic memory) by Heuss and Electronic Coupler System by Heuss.'
+        },
+        GAME_TRACKER:{
+          TITLE: 'Mechanic action systems',
+            CONTENT: 'Mechanic action systems have been built in the Molin Company since 1979. They are constantly modified due to the cooperation with two German companies, namely Heuss and Laukhuff. Wooden abstracts are made from pine tree wood – wooden slats. Torsion bars are made from oak tree wood with arms made from hornbeam wood, fixed in felted boards or made from aluminium pipes with hornbeam arms. Torsion bars are fixed in oak plywood board. Bevels and control arms are wooden, made from horbeam, fixed in felted boards.'
+        },
+        REGISTRY_TRACKER:{
+          TITLE: 'Tracker action systems  – mechanic or electric',
+            CONTENT: 'The tracker action system is composed of torsion rollers and metal control arms as well as bars made from oak tree wood. Tracker can be also electric thanks to bolted electromagnets.'
+        },
+        BARGE:{
+          TITLE: 'Wind chests',
+            CONTENT: 'Wind chests are valve plate – bolt from oak tree wood. At the bottom of a wind chest in ventilation box a wedge bellows with valve is installed. The tune valves are made from pine tree wood. They are felted and leathered. The size of inlet valve is measured on the basis of a number of tunes in the wind chest. Band of a tune valve  goes through the botton of a wind chest in a form of a leather console. Tracker sliders are made from oak tree wood or bakelite. Boards and reed tongue pipe racks are made from oak tree wood. The insulations between boards and bolts are made from foam in the form of rollers.'
+        },
+        BELLOWS:{
+          TITLE: 'Bellows',
+            CONTENT: 'We can distinguish two types of bellows, namely wedge bellows and floating bellows (units 3 or 4 pairs of bellows). They are made from pine tree wood and leather. The pairs of bellows are supplied with an air adjuster.'
+        },
+        FANS:{
+          TITLE: 'Fans',
+            CONTENT: 'We import them from abroad.'
+        },
+        PIPES:{
+          TITLE: 'Pipes',
+            CONTENT: 'All pipes: metal and wooden, labial and reed tongue are made by us. Labial pipes from tin alloy have been made by us since the 70s of the 20th century. The reed tongue pipes are made by us or they are imported from abroad. Metal labial pipes and reed tongue pipes are made from alloys of tin and leed with different amounts of tin, e.g., 25%, 50%, 70% i 80%. Tin for pipes is cast, cut and polished or hammered. Prospect pipes are made from high-grade alloys of tin. Wooden pipes are made from season pine and oak tree wood.'
+        },
+        INTONATION:{
+          TITLE: 'Tuning',
+            CONTENT: 'Initial tuning is carried out in our workshop with the use of trial wind chest. Air pressure oscillates between 60-80 mm of water columns. Different temperaments are used during tuning of an instrument.'
+        },
+        MONTAGE:{
+          TITLE: 'Assembly',
+            CONTENT: 'Initial assembly takes place in our assembly hall in the Mollin Company (the hall is 8 metres high). An instrument is assembled together with pipes and action systems. Before an instrument is assembled at a client’s place, it is possible to examine all the sub-systems and their efficiency. After that, an instrument is disassembled, packed and transported to its final destination. This method of assembling shortens a final assembly significantly.'
+        }
+      },
+      REALISATIONS:{
+        TITLE: 'Realisations',
+          P1: 'To facilitate browsing through our realisations, organs made by us are divided into:',
+          NEW: 'New',
+          NEW_TITLE: 'New realisation',
+          RENOVATIONS: 'Restoration',
+          IN_PROGRESS: 'Under work',
+          YEAR: 'Year:',
+          TRACKER: 'Action:',
+          VOICES: 'Number of tunes:',
+          MANUALS: 'Manuals:',
+          DETAILS: 'The details of realisation',
+          REALISATIONS_IN_PROGRESS: 'Under realisation',
+          CREATOR: 'Craftsman:',
+          BUILT_YEAR: 'Year of realisation:',
+          DETAILS_TITLE: 'Realisations',
+          RENOVATIONS_TITLE: 'Realisations restorations'
+      },
+      REFERENCES:{
+        TITLE: 'References',
+          CONTENT: 'The following CDs were recorded with the use of the instruments built by the Mollin Company:'
+      },
+      CONTACT:{
+        TITLE: 'Contact',
+          CONTENT: 'Should you be interested in our offer and realisations, do not hesitate to contact us:'
+      }
+    });
+
+
+  $translateProvider.fallbackLanguage(['pl', 'de', 'en']);
       var prefferedLanguage = sessionStorage.lang ? sessionStorage.lang : 'pl';
       $translateProvider.preferredLanguage(prefferedLanguage);
     }]);

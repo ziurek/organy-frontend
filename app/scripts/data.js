@@ -1416,6 +1416,17 @@ define(['angular'], function(angular) {
       size: '10',
       manual: 'II+P',
       creator: 'C.F. Voelkner, Duninowo, Opus 166',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/stara_lubianka_2016/prospekt.jpg',
+          img: '/images/realisations/stara_lubianka_2016/prospekt.jpg'
+        },
+        {
+          thumb: '/images/realisations/thumbs/stara_lubianka_2016/kontuar.jpg',
+          img: '/images/realisations/stara_lubianka_2016/kontuar.jpg'
+        }
+      ],
+      hasDetails: true
     }
   ]);
 });
