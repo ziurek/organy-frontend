@@ -1022,6 +1022,33 @@ define(['angular'], function(angular) {
   ])
   .constant('renovationsRealisations', [
     {
+      place: 'Smardzko k. Świdwina, pw.Matki Boskiej Ostrobramskiej',
+      year: 2018,
+      tracker: 'mechaniczna',
+      size: '5',
+      manual: 'I+P (podwieszony)',
+      creator: 'B. Grüneberg, Szczecin, 1860 r., Opus 33',
+    },
+    {
+      place: 'Stara Łubianka, pw. Podwyższenia Krzyża Świętego',
+      year: 2018,
+      tracker: 'pneumatyczna',
+      size: '10',
+      manual: 'II+P',
+      creator: 'C.F. Voelkner, Duninowo, Opus 166',
+      images: [
+        {
+          thumb: '/images/realisations/thumbs/stara_lubianka_2016/prospekt.jpg',
+          img: '/images/realisations/stara_lubianka_2016/prospekt.jpg'
+        },
+        {
+          thumb: '/images/realisations/thumbs/stara_lubianka_2016/kontuar.jpg',
+          img: '/images/realisations/stara_lubianka_2016/kontuar.jpg'
+        }
+      ],
+      hasDetails: true
+    },
+    {
       place: 'Śliwice, pw.św.Katarzyny Aleksandryjskiej',
       year: 2016,
       creator: 'A. Polzin, Posen, 1904, Opus 18',
@@ -1392,41 +1419,20 @@ define(['angular'], function(angular) {
   ])
   .constant('inProgressRealisations', [
     {
+      place: 'Kraków Ruczaj, pw. Zesłania Ducha Świętego',
+      smallerTitle: "Nowe organy",
+      year: 2019,
+      tracker: 'mechaniczna / elektryczna',
+      size: '28',
+      manual: 'II+P',
+    },
+    {
       place: 'Gdańsk Morena, pw. Bożego Ciała',
       smallerTitle: "Nowe organy",
       year: 2017,
       tracker: 'elektryczna / mechaniczna',
       size: '66',
       manual: 'IV+P',
-    },
-    {
-      place: 'Smardzko k. Świdwina, pw.Matki Boskiej Ostrobramskiej',
-      smallerTitle: "Renowacja",
-      year: 2017,
-      tracker: 'mechaniczna',
-      size: '5',
-      manual: 'I+P (podwieszony)',
-      creator: 'B. Grüneberg, Szczecin, 1860 r., Opus 33',
-    },
-    {
-      place: 'Stara Łubianka, pw. Podwyższenia Krzyża Świętego',
-      smallerTitle: "Renowacja",
-      year: 2017,
-      tracker: 'pneumatyczna',
-      size: '10',
-      manual: 'II+P',
-      creator: 'C.F. Voelkner, Duninowo, Opus 166',
-      images: [
-        {
-          thumb: '/images/realisations/thumbs/stara_lubianka_2016/prospekt.jpg',
-          img: '/images/realisations/stara_lubianka_2016/prospekt.jpg'
-        },
-        {
-          thumb: '/images/realisations/thumbs/stara_lubianka_2016/kontuar.jpg',
-          img: '/images/realisations/stara_lubianka_2016/kontuar.jpg'
-        }
-      ],
-      hasDetails: true
     }
   ]);
 });
